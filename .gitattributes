@@ -1,0 +1,10 @@
+# Mark this repository as Rust
+*.rs linguist-detectable=true
+*.sh linguist-detectable=false
+*.md linguist-documentation=true
+*.pdf linguist-documentation=true
+*.jpg linguist-documentation=true
+
+# Ensure Rust is the primary language
+* linguist-language=Rust
+*.rs linguist-language=Rust
