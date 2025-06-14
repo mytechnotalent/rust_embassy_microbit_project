@@ -1,18 +1,14 @@
 ![image](https://github.com/mytechnotalent/rust_embassy_microbit_project/blob/main/rust_embassy_microbit_project.jpg?raw=true)
 
-# Rust Embassy Micro:bit Project
+# Rust Embassy microbit Project
 
-A comprehensive embedded Rust project running on the BBC micro:bit v2 (nRF52833), built with Embassy async framework and no_std runtime. This Board Support Package (BSP) provides easy access to all micro:bit peripherals through async interfaces.
+A simple embedded Rust project running on the microbit v2, built with Embassy async framework and no_std runtime.
 
 <br>
 
 ## FREE Reverse Engineering Self-Study Course [HERE](https://github.com/mytechnotalent/Reverse-Engineering-Tutorial)
 
 <br>
-
-## Wiring
-![image](https://github.com/mytechnotalent/embassy-microbit-neo-button/blob/main/diagrams/Debug-Probe-Wiring.png?raw=true)
-![image](https://github.com/mytechnotalent/embassy-microbit-neo-button/blob/main/diagrams/rust_embassy_microbit_project.png?raw=true)
 
 ## Features
 - **5x5 LED Matrix Display**: Async display driver with custom fonts and animations
@@ -27,13 +23,7 @@ A comprehensive embedded Rust project running on the BBC micro:bit v2 (nRF52833)
 - **No Heap**: Runs entirely in static memory with deterministic behavior
 
 ## Project Structure
-- `src/lib.rs`: Main library entry point and re-exports
-- `src/board.rs`: Microbit BSP with peripheral initialization
 - `src/display/`: 5x5 LED matrix driver with fonts and bitmap support
-- `src/motion/`: Accelerometer and magnetometer abstraction
-- `src/speaker.rs`: Audio output abstraction
-- `src/mic.rs`: Microphone input handling
-- `src/ble.rs`: Bluetooth Low Energy support (optional)
 - `examples/`: Various example applications demonstrating features
 
 ## Examples
@@ -42,34 +32,6 @@ A comprehensive embedded Rust project running on the BBC micro:bit v2 (nRF52833)
 Demonstrates LED matrix control with button interactions:
 ```bash
 cd examples/display
-cargo run --release
-```
-
-### Accelerometer Example
-Shows motion detection and tilt sensing:
-```bash
-cd examples/accelerometer
-cargo run --release
-```
-
-### Magnetometer Example
-Compass functionality and magnetic field detection:
-```bash
-cd examples/magnetometer
-cargo run --release
-```
-
-### Speaker Example
-Audio output and tone generation:
-```bash
-cd examples/speaker
-cargo run --release
-```
-
-### Bluetooth Examples
-BLE peripheral and central modes:
-```bash
-cd examples/ble-trouble
 cargo run --release
 ```
 
@@ -151,33 +113,33 @@ RAM Memory:
 ## Peripheral Pin Mapping
 
 ### Internal Connections
-| Function | Pin | Description |
-|----------|-----|-------------|
-| LED Matrix Rows | P0_21, P0_22, P0_15, P0_24, P0_19 | Row drivers |
-| LED Matrix Cols | P0_28, P0_11, P0_31, P1_05, P0_30 | Column drivers |
-| Button A | P0_14 | Pull-up enabled |
-| Button B | P0_23 | Pull-up enabled |
-| Speaker | P0_00 | PWM audio output |
-| Microphone | P0_05 | ADC input |
-| Mic Enable | P0_20 | Microphone power |
-| Internal I2C SCL | P0_08 | Accelerometer/Magnetometer |
-| Internal I2C SDA | P0_16 | Accelerometer/Magnetometer |
+| Function         | Pin                               | Description                |
+| ---------------- | --------------------------------- | -------------------------- |
+| LED Matrix Rows  | P0_21, P0_22, P0_15, P0_24, P0_19 | Row drivers                |
+| LED Matrix Cols  | P0_28, P0_11, P0_31, P1_05, P0_30 | Column drivers             |
+| Button A         | P0_14                             | Pull-up enabled            |
+| Button B         | P0_23                             | Pull-up enabled            |
+| Speaker          | P0_00                             | PWM audio output           |
+| Microphone       | P0_05                             | ADC input                  |
+| Mic Enable       | P0_20                             | Microphone power           |
+| Internal I2C SCL | P0_08                             | Accelerometer/Magnetometer |
+| Internal I2C SDA | P0_16                             | Accelerometer/Magnetometer |
 
 ### Edge Connector
-| Connector | Pin | GPIO | Description |
-|-----------|-----|------|-------------|
-| P0 | Large | P0_02 | General purpose I/O |
-| P1 | Large | P0_03 | General purpose I/O |
-| P2 | Large | P0_04 | General purpose I/O |
-| P8 | Small | P0_10 | General purpose I/O |
-| P9 | Small | P0_09 | General purpose I/O |
-| P12 | Small | P0_12 | General purpose I/O |
-| P13 | Small | P0_17 | General purpose I/O |
-| P14 | Small | P0_01 | General purpose I/O |
-| P15 | Small | P0_13 | General purpose I/O |
-| P16 | Small | P1_02 | General purpose I/O |
-| P19 | Small | P0_26 | General purpose I/O |
-| P20 | Small | P1_00 | General purpose I/O |
+| Connector | Pin   | GPIO  | Description         |
+| --------- | ----- | ----- | ------------------- |
+| P0        | Large | P0_02 | General purpose I/O |
+| P1        | Large | P0_03 | General purpose I/O |
+| P2        | Large | P0_04 | General purpose I/O |
+| P8        | Small | P0_10 | General purpose I/O |
+| P9        | Small | P0_09 | General purpose I/O |
+| P12       | Small | P0_12 | General purpose I/O |
+| P13       | Small | P0_17 | General purpose I/O |
+| P14       | Small | P0_01 | General purpose I/O |
+| P15       | Small | P0_13 | General purpose I/O |
+| P16       | Small | P1_02 | General purpose I/O |
+| P19       | Small | P0_26 | General purpose I/O |
+| P20       | Small | P1_00 | General purpose I/O |
 
 ---
 
@@ -217,9 +179,6 @@ cargo build --release
 # Build specific example
 cd examples/display
 cargo build --release
-
-# Build with Bluetooth support
-cargo build --release --features trouble
 ```
 
 ### Flash Commands
@@ -248,11 +207,11 @@ probe-rs run --chip nRF52833_xxAA target/thumbv7em-none-eabihf/release/display-e
 
 ## Feature Flags
 
-| Feature | Description | Dependencies |
-|---------|-------------|--------------|
-| `default` | Basic functionality with defmt logging | `defmt` |
-| `defmt` | Logging and debugging support | defmt crates |
-| `trouble` | Bluetooth Low Energy support | nrf-sdc, nrf-mpsl, static_cell |
+| Feature   | Description                            | Dependencies                   |
+| --------- | -------------------------------------- | ------------------------------ |
+| `default` | Basic functionality with defmt logging | `defmt`                        |
+| `defmt`   | Logging and debugging support          | defmt crates                   |
+| `trouble` | Bluetooth Low Energy support           | nrf-sdc, nrf-mpsl, static_cell |
 
 Enable features in Cargo.toml:
 ```toml
@@ -305,27 +264,6 @@ loop {
 }
 ```
 
-### Motion Sensing
-```rust
-use embassy_nrf::twim::{self, Twim};
-use lsm303agr::{Lsm303agr, interface::I2cInterface};
-
-let i2c_config = twim::Config::default();
-let i2c = Twim::new(board.twispi0, board.i2c_int_scl, board.i2c_int_sda, i2c_config);
-let mut sensor = Lsm303agr::new_with_i2c(i2c);
-
-sensor.init().await.unwrap();
-sensor.set_accel_scale(lsm303agr::AccelScale::G2).await.unwrap();
-
-loop {
-    if sensor.accel_status().await.unwrap().xyz_new_data() {
-        let accel_data = sensor.acceleration().await.unwrap();
-        defmt::info!("Acceleration: x={} y={} z={}", accel_data.x_mg(), accel_data.y_mg(), accel_data.z_mg());
-    }
-    embassy_time::Timer::after_millis(100).await;
-}
-```
-
 ---
 
 ## Requirements
@@ -338,7 +276,7 @@ loop {
 ---
 
 ## License
-MIT OR Apache-2.0 License
+Apache-2.0 License
 
 ---
 
