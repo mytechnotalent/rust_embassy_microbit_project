@@ -282,6 +282,7 @@ Apache-2.0 License
 
 ## References
 - [Embassy Framework](https://embassy.dev/) - Embedded async executor
+- [microbit BSP](https://github.com/lulf/microbit-bsp) - microbit BSP w/ Embassy
 - [BBC micro:bit v2 Datasheet](https://tech.microbit.org/hardware/schematic/) - Hardware specifications
 - [nRF52833 Product Specification](https://www.nordicsemi.com/products/nrf52833) - Nordic SoC documentation  
 - [Rust Embedded Book](https://doc.rust-lang.org/embedded-book/) - Embedded Rust programming guide
