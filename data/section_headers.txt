@@ -1,0 +1,45 @@
+
+examples/display/target/thumbv7em-none-eabihf/debug/microbit-async-display-example:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .vector_table 00000100  00000000  00000000  00000114  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .text         0000b97c  00000100  00000100  00000214  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .rodata       00003350  0000ba80  0000ba80  0000bb90  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .data         00000050  20000000  0000edd0  0000eee0  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+  4 .gnu.sgstubs  00000000  0000ee20  0000ee20  0000ef40  2**5
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  5 .bss          000081d0  20000050  20000050  0000ef40  2**2
+                  ALLOC
+  6 .uninit       00000400  20008220  20008220  0000ef40  2**2
+                  ALLOC
+  7 .defmt        00000014  00000000  00000000  0000ef40  2**2
+                  CONTENTS, READONLY
+  8 .debug_abbrev 0000c9ca  00000000  00000000  0000ef54  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+  9 .debug_info   000fabc5  00000000  00000000  0001b91e  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 10 .debug_aranges 0000aec8  00000000  00000000  001164e3  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 11 .debug_ranges 0002c8c0  00000000  00000000  001213ab  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 12 .debug_str    000fa3c1  00000000  00000000  0014dc6b  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 13 .comment      00000099  00000000  00000000  0024802c  2**0
+                  CONTENTS, READONLY
+ 14 .ARM.attributes 0000003a  00000000  00000000  002480c5  2**0
+                  CONTENTS, READONLY
+ 15 .debug_frame  000214dc  00000000  00000000  00248100  2**2
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 16 .debug_line   00071973  00000000  00000000  002695dc  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 17 .debug_loc    00001bcb  00000000  00000000  002daf4f  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 18 .debug_pubnames 000002be  00000000  00000000  002dcb1a  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 19 .debug_pubtypes 00000047  00000000  00000000  002dcdd8  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS

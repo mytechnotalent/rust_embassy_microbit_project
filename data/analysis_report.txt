@@ -1,0 +1,40 @@
+BBC micro:bit Binary Analysis Report
+Generated on: Sat Jun 14 13:46:46 EDT 2025
+Binary: examples/display/target/thumbv7em-none-eabihf/debug/microbit-async-display-example
+Build Type: debug
+==========================================
+
+BINARY SIZE INFORMATION:
+  Total Size: 3.0M
+
+SECTION SIZES:
+  .text (code): 46K
+  .rodata (read-only): 13K
+  .data (initialized): 80B
+
+SYMBOL STATISTICS:
+  Total symbols:     1131
+  Function symbols:      828
+  Data symbols:      273
+
+MEMORY LAYOUT:
+  (See section_headers.txt for detailed memory layout)
+
+FILES GENERATED:
+  all_headers.txt
+  analysis_report.txt
+  disassembly_full.txt
+  disassembly_with_source.txt
+  firmware_raw.bin
+  firmware.hex
+  firmware.srec
+  section_data.bin
+  section_headers.txt
+  section_rodata.bin
+  section_text.bin
+  symbols_all.txt
+  symbols_by_size.txt
+  symbols_data.txt
+  symbols_defined.txt
+  symbols_functions.txt
+  symbols_global.txt

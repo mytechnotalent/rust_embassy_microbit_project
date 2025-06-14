@@ -4,24 +4,46 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-microbit-bsp = { path = "../../" }
-
+embassy-nrf = { version = "0.3", features = [
+    "gpiote",
+    "nfc-pins-as-gpio",
+    "nrf52833",
+    "time-driver-rtc1",
+    "time",
+] }
 embassy-futures = { version = "0.1", default-features = false }
 embassy-executor = { version = "0.7.0", default-features = false, features = [
-    "arch-cortex-m", 
-    "defmt", 
-    "executor-interrupt", 
-    "executor-thread", 
-    "task-arena-size-32768"
-    ] }
-embassy-time = { version = "0.4.0", default-features = false, features = ["defmt-timestamp-uptime", "defmt"] }
+    "arch-cortex-m",
+    "defmt",
+    "executor-interrupt",
+    "executor-thread",
+    "task-arena-size-32768",
+] }
+embassy-time = { version = "0.4.0", default-features = false, features = [
+    "defmt-timestamp-uptime",
+    "defmt",
+] }
+embassy-sync = { version = "0.6.2" }
 
 cortex-m-rt = "0.7"
-
 cortex-m = { version = "0.7", features = ["critical-section-single-core"] }
-defmt = "1.0.1"
+embedded-hal = "1.0"
+futures = { version = "0.3", default-features = false }
+heapless = "0.8.0"
+
+defmt = { version = "1.0.1", optional = true }
 defmt-rtt = "1"
 panic-probe = { version = "1", features = ["print-defmt"] }
+
+[features]
+default = ["defmt"]
+defmt = [
+    "dep:defmt",
+    "embassy-nrf/defmt",
+    "heapless/defmt-03",
+    "embassy-time/defmt",
+    "embassy-time/defmt-timestamp-uptime",
+]
 
 [profile.release]
 debug = 2

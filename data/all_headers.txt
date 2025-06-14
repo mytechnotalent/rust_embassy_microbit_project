@@ -1,0 +1,1316 @@
+
+examples/display/target/thumbv7em-none-eabihf/debug/microbit-async-display-example:     file format elf32-littlearm
+examples/display/target/thumbv7em-none-eabihf/debug/microbit-async-display-example
+architecture: armv7e-m, flags 0x00000012:
+EXEC_P, HAS_SYMS
+start address 0x00000101
+
+Program Header:
+    LOAD off    0x00000114 vaddr 0x00000000 paddr 0x00000000 align 2**2
+         filesz 0x00000100 memsz 0x00000100 flags r--
+    LOAD off    0x00000214 vaddr 0x00000100 paddr 0x00000100 align 2**2
+         filesz 0x0000b97c memsz 0x0000b97c flags r-x
+    LOAD off    0x0000bb90 vaddr 0x0000ba80 paddr 0x0000ba80 align 2**3
+         filesz 0x00003350 memsz 0x00003350 flags r--
+    LOAD off    0x0000eee0 vaddr 0x20000000 paddr 0x0000edd0 align 2**3
+         filesz 0x00000050 memsz 0x00000050 flags rw-
+    LOAD off    0x0000ef40 vaddr 0x20000050 paddr 0x20000050 align 2**2
+         filesz 0x00000000 memsz 0x000085d0 flags rw-
+   STACK off    0x00000000 vaddr 0x00000000 paddr 0x00000000 align 2**0
+         filesz 0x00000000 memsz 0x00000000 flags rw-
+private flags = 0x5000400: [Version5 EABI] [hard-float ABI]
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .vector_table 00000100  00000000  00000000  00000114  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .text         0000b97c  00000100  00000100  00000214  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .rodata       00003350  0000ba80  0000ba80  0000bb90  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .data         00000050  20000000  0000edd0  0000eee0  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+  4 .gnu.sgstubs  00000000  0000ee20  0000ee20  0000ef40  2**5
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  5 .bss          000081d0  20000050  20000050  0000ef40  2**2
+                  ALLOC
+  6 .uninit       00000400  20008220  20008220  0000ef40  2**2
+                  ALLOC
+  7 .defmt        00000014  00000000  00000000  0000ef40  2**2
+                  CONTENTS, READONLY
+  8 .debug_abbrev 0000c9ca  00000000  00000000  0000ef54  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+  9 .debug_info   000fabc5  00000000  00000000  0001b91e  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 10 .debug_aranges 0000aec8  00000000  00000000  001164e3  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 11 .debug_ranges 0002c8c0  00000000  00000000  001213ab  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 12 .debug_str    000fa3c1  00000000  00000000  0014dc6b  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 13 .comment      00000099  00000000  00000000  0024802c  2**0
+                  CONTENTS, READONLY
+ 14 .ARM.attributes 0000003a  00000000  00000000  002480c5  2**0
+                  CONTENTS, READONLY
+ 15 .debug_frame  000214dc  00000000  00000000  00248100  2**2
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 16 .debug_line   00071973  00000000  00000000  002695dc  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 17 .debug_loc    00001bcb  00000000  00000000  002daf4f  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 18 .debug_pubnames 000002be  00000000  00000000  002dcb1a  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 19 .debug_pubtypes 00000047  00000000  00000000  002dcdd8  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 0kx73kts58rcynewxm6lqhnuq
+0000ba8c l     O .rodata	00000010 .Lanon.5a577a817502453beb239981ef330a5e.1
+0000ba9c l     O .rodata	00000010 .Lanon.5a577a817502453beb239981ef330a5e.2
+0000baac l     O .rodata	00000010 .Lanon.5a577a817502453beb239981ef330a5e.3
+0000babc l     O .rodata	00000022 .Lanon.5a577a817502453beb239981ef330a5e.4
+0000bae0 l     O .rodata	00000010 .Lanon.5a577a817502453beb239981ef330a5e.5
+0000baf0 l     O .rodata	00000010 .Lanon.5a577a817502453beb239981ef330a5e.6
+0000bb00 l     O .rodata	00000010 .Lanon.5a577a817502453beb239981ef330a5e.7
+0000bb10 l     O .rodata	00000010 .Lanon.5a577a817502453beb239981ef330a5e.8
+0000bb20 l     O .rodata	00000010 .Lanon.5a577a817502453beb239981ef330a5e.9
+0000bb30 l     O .rodata	00000010 .Lanon.5a577a817502453beb239981ef330a5e.10
+0000bb40 l     O .rodata	00000010 .Lanon.5a577a817502453beb239981ef330a5e.11
+0000bb50 l     O .rodata	00000010 .Lanon.5a577a817502453beb239981ef330a5e.12
+00000158 l     F .text	0000007e .hidden _ZN30microbit_async_display_example5types6Bitmap3new17h79fbfbb6e6733313E
+000001d6 l     F .text	0000001a .hidden _ZN30microbit_async_display_example5types6Bitmap5empty17h671b31d8a4f10c17E
+000001f0 l     F .text	00000054 .hidden _ZN30microbit_async_display_example5types6Bitmap9clear_all17h8a2ff72cfaf55b17E
+00000244 l     F .text	000000a0 .hidden _ZN30microbit_async_display_example5types6Bitmap6is_set17h5aea258f4b7982f1E
+000002e4 l     F .text	0000005a .hidden _ZN30microbit_async_display_example5types6Bitmap10shift_left17h5fb52be716cf284fE
+0000033e l     F .text	0000005a .hidden _ZN30microbit_async_display_example5types6Bitmap11shift_right17h116d0bbee2ff2972E
+00000398 l     F .text	0000007a .hidden _ZN30microbit_async_display_example5types6Bitmap2or17h018d5e962f7263c6E
+00000412 l     F .text	0000000e .hidden _ZN30microbit_async_display_example5types10Brightness5level17hec1be1fa7303eef2E
+00000420 l     F .text	00000008 .hidden _ZN92_$LT$microbit_async_display_example..types..Brightness$u20$as$u20$core..default..Default$GT$7default17hb3a063483d781c24E
+00000000 l    df *ABS*	00000000 0lmvektcpjq43w1jpkliqaael
+00000428 l     F .text	0000001e .hidden _ZN16embassy_executor4arch6thread8Executor3run17h88665bb70e3781baE
+00000000 l    df *ABS*	00000000 15hfvauofugafrl4atlfna2mo
+00000446 l     F .text	00000094 _ZN16embassy_executor3raw20TaskStorage$LT$F$GT$4poll17ha6c24643d096382aE
+000004da l     F .text	0000005c _ZN16embassy_executor3raw21TaskPool$LT$F$C$_$GT$10spawn_impl17h6d46def5e71b4fb0E
+0000065a l     F .text	00000012 _ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$4iter17ha661ed814e902af1E
+0000058e l     F .text	0000003a _ZN16embassy_executor3raw22AvailableTask$LT$F$GT$15initialize_impl17hb60128c8430b2e48E
+0000bb60 l     O .rodata	00000100 .Lanon.7193a28b7f1bb58bcafff16c0222b3f5.0
+00000646 l     F .text	00000014 _ZN16embassy_executor3raw7TaskRef3new17h1662bfabef155bf4E
+00000536 l     F .text	00000012 .hidden _ZN16embassy_executor3raw21TaskPool$LT$F$C$_$GT$15_spawn_async_fn17h1601693635614615E
+00000548 l     F .text	00000046 .hidden _ZN16embassy_executor3raw21TaskPool$LT$F$C$_$GT$3new17h9cf8f319d5268cb1E
+000005c8 l     F .text	0000006e .hidden _ZN16embassy_executor3raw22AvailableTask$LT$F$GT$5claim17h480f478892374325E
+00000636 l     F .text	00000010 .hidden _ZN16embassy_executor3raw22AvailableTask$LT$F$GT$5claim28_$u7b$$u7b$closure$u7d$$u7d$17h192ea2556efaa5fbE
+00000000 l    df *ABS*	00000000 1b4r9us7wizxid7gvbsj2x61j
+0000066c l     F .text	00000012 .hidden _ZN4core3ptr5write17h05e94e16f97cc45cE
+00000000 l    df *ABS*	00000000 1h9i8thy3f7ycwbypxhnxant2
+00000708 l     F .text	00000132 _ZN16embassy_executor7_export14Arena$LT$_$GT$5alloc17hd3523b6eec755e24E
+0000bccc l     O .rodata	00000010 .Lanon.93341e7119d5309384c34c6a10f15ef1.1
+0000bcdc l     O .rodata	00000010 .Lanon.93341e7119d5309384c34c6a10f15ef1.2
+0000bcec l     O .rodata	00000010 .Lanon.93341e7119d5309384c34c6a10f15ef1.3
+0000bcfc l     O .rodata	00000010 .Lanon.93341e7119d5309384c34c6a10f15ef1.4
+0000067e l     F .text	00000010 .hidden _ZN16embassy_executor7_export11TaskPoolRef3get17h2a7433025a7916ccE
+0000068e l     F .text	0000007a .hidden _ZN16embassy_executor7_export11TaskPoolRef3get28_$u7b$$u7b$closure$u7d$$u7d$17h51e2099415bbea6fE
+00000000 l    df *ABS*	00000000 2h82ns9ombny3qw7of8b26re3
+00000908 l     F .text	0000005a _ZN91_$LT$core..slice..iter..Iter$LT$T$GT$$u20$as$u20$core..iter..traits..iterator..Iterator$GT$4next17ha62b596e8603dbbaE
+000008ec l     F .text	0000000e .hidden _ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17hca4b17596e89abbbE
+00000962 l     F .text	00000044 .hidden _ZN91_$LT$core..slice..iter..Iter$LT$T$GT$$u20$as$u20$core..iter..traits..iterator..Iterator$GT$8find_map17h591791fb5ca92d1fE
+00000856 l     F .text	0000002e .hidden _ZN4core5slice4iter13Iter$LT$T$GT$3new17ha012cd68c91985feE
+0000083a l     F .text	0000001c .hidden _ZN4core4iter6traits8iterator8Iterator9enumerate17h98d390c1ea5f9ce6E
+00000884 l     F .text	0000002c .hidden _ZN4core5slice4iter16IterMut$LT$T$GT$3new17hd287c3811530aa19E
+000008b0 l     F .text	0000002e .hidden _ZN4core5slice4iter16IterMut$LT$T$GT$3new17hfd0a6c09fb961270E
+000008de l     F .text	0000000e .hidden _ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17ha73d16b1813da6c8E
+000008fa l     F .text	0000000e .hidden _ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17hfe3c64bb99cfde94E
+000009a6 l     F .text	00000058 .hidden _ZN94_$LT$core..slice..iter..IterMut$LT$T$GT$$u20$as$u20$core..iter..traits..iterator..Iterator$GT$4next17h0bfa23dedee62d01E
+000009fe l     F .text	00000058 .hidden _ZN94_$LT$core..slice..iter..IterMut$LT$T$GT$$u20$as$u20$core..iter..traits..iterator..Iterator$GT$4next17h7eb9ceb88457eba8E
+00000000 l    df *ABS*	00000000 2x0ryln32c2slusl6dxkhzod2
+00000a56 l     F .text	0000000c _ZN59_$LT$F$u20$as$u20$core..future..into_future..IntoFuture$GT$11into_future17h084bf453f79ba1fbE
+00000a7a l     F .text	0000000c _ZN59_$LT$F$u20$as$u20$core..future..into_future..IntoFuture$GT$11into_future17hdcc650a88c2ece8cE
+00000aec l     F .text	00000072 _ZN30microbit_async_display_example7display26LedMatrix$LT$P$C$_$C$_$GT$5clear17hb390533ac5a580c4E
+00000b5e l     F .text	0000001c _ZN30microbit_async_display_example7display26LedMatrix$LT$P$C$_$C$_$GT$5apply17ha4d902a50f6e9c9dE
+00000b8e l     F .text	000001a2 _ZN30microbit_async_display_example7display26LedMatrix$LT$P$C$_$C$_$GT$6render17h38b0b998779ccae4E
+0000bd47 l     O .rodata	00000001 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.2
+0000bd58 l     O .rodata	00000010 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.4
+0000bd68 l     O .rodata	00000010 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.5
+0000bd78 l     O .rodata	00000010 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.6
+0000bd88 l     O .rodata	00000010 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.7
+0000bd98 l     O .rodata	00000010 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.8
+00000fbc l     F .text	00000036 _ZN30microbit_async_display_example7display26LedMatrix$LT$P$C$_$C$_$GT$17scroll_with_speed17hda38a3c09c0ac63dE
+00000ff2 l     F .text	000000e2 _ZN30microbit_async_display_example7display26LedMatrix$LT$P$C$_$C$_$GT$17scroll_with_speed28_$u7b$$u7b$closure$u7d$$u7d$17h9ecf84d48999b150E
+0000bda8 l     O .rodata	00000010 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.9
+000010d4 l     F .text	00000042 _ZN30microbit_async_display_example7display26LedMatrix$LT$P$C$_$C$_$GT$7animate17hfb5f31c83fb16f0fE
+00001116 l     F .text	000001b2 _ZN30microbit_async_display_example7display26LedMatrix$LT$P$C$_$C$_$GT$7animate28_$u7b$$u7b$closure$u7d$$u7d$17hb06aa3ac67ad1877E
+0000bdb8 l     O .rodata	00000010 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.10
+00001392 l     F .text	00000114 _ZN30microbit_async_display_example7display22Animation$LT$_$C$_$GT$3new17hc349e1509ac35d71E
+0000bdc8 l     O .rodata	00000010 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.11
+0000bd1c l     O .rodata	0000002b .Lanon.e5db0d0660bc5904c97d5917f5a678eb.1
+0000bd0c l     O .rodata	00000010 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.0
+00001574 l     F .text	000000f8 _ZN30microbit_async_display_example7display22Animation$LT$_$C$_$GT$4next17ha1934380e637d722E
+0000bdd8 l     O .rodata	00000010 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.12
+000012c8 l     F .text	00000030 _ZN30microbit_async_display_example7display26AnimationData$LT$_$C$_$GT$3len17hdbb05d4ecc74d999E
+000012f8 l     F .text	0000009a _ZN30microbit_async_display_example7display26AnimationData$LT$_$C$_$GT$5frame17h71c87e1aad83913bE
+0000bde8 l     O .rodata	00000010 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.13
+0000bdf8 l     O .rodata	00000010 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.14
+0000be08 l     O .rodata	00000022 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.15
+0000be2c l     O .rodata	00000010 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.16
+0000be3c l     O .rodata	00000010 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.17
+000014a6 l     F .text	000000ce _ZN30microbit_async_display_example7display22Animation$LT$_$C$_$GT$7current17h8c0c9b1294db6a9dE
+0000be4c l     O .rodata	00000010 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.18
+0000be5c l     O .rodata	00000010 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.19
+0000be6c l     O .rodata	00000010 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.20
+0000be7c l     O .rodata	00000010 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.21
+0000be8c l     O .rodata	00000010 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.22
+0000be9c l     O .rodata	00000010 .Lanon.e5db0d0660bc5904c97d5917f5a678eb.23
+00000a62 l     F .text	0000000c .hidden _ZN59_$LT$F$u20$as$u20$core..future..into_future..IntoFuture$GT$11into_future17h896d1013a979303dE
+00000a6e l     F .text	0000000c .hidden _ZN59_$LT$F$u20$as$u20$core..future..into_future..IntoFuture$GT$11into_future17h90e0f18db2d5d939E
+00000a86 l     F .text	00000066 .hidden _ZN30microbit_async_display_example7display26LedMatrix$LT$P$C$_$C$_$GT$3new17hf46a222811fa3cf4E
+00000b7a l     F .text	00000014 .hidden _ZN30microbit_async_display_example7display26LedMatrix$LT$P$C$_$C$_$GT$14set_brightness17h6b9aafaaf56ca5aaE
+00000d30 l     F .text	00000040 .hidden _ZN30microbit_async_display_example7display26LedMatrix$LT$P$C$_$C$_$GT$7display17h2bca18fd9dbaada7E
+00000d70 l     F .text	0000014a .hidden _ZN30microbit_async_display_example7display26LedMatrix$LT$P$C$_$C$_$GT$7display28_$u7b$$u7b$closure$u7d$$u7d$17he7ca901caa01f5a9E
+00000eba l     F .text	00000024 .hidden _ZN30microbit_async_display_example7display26LedMatrix$LT$P$C$_$C$_$GT$6scroll17hb28bce8910432fa3E
+00000ede l     F .text	000000de .hidden _ZN30microbit_async_display_example7display26LedMatrix$LT$P$C$_$C$_$GT$6scroll28_$u7b$$u7b$closure$u7d$$u7d$17h10d4be5fd8465005E
+00000000 l    df *ABS*	00000000 2yu8oyuo4yarj02pridjk11l1
+0000beac l     O .rodata	00000007 .Lanon.a473f3ed17537ab1765ff248236b5c92.0
+0000166c l     F .text	00000022 .hidden _ZN92_$LT$microbit_async_display_example..display..AnimationError$u20$as$u20$core..fmt..Debug$GT$3fmt17h7010a0dc922b15aeE
+00000000 l    df *ABS*	00000000 3mjhl4wfa0oe4x6hmpefsha5x
+0000168e l     F .text	00000014 .hidden _ZN4core3str21_$LT$impl$u20$str$GT$3len17ha6e9c427a1f032a9E
+00000000 l    df *ABS*	00000000 3pi49h4rv9r9poien2u8cpnfo
+0000bee8 l     O .rodata	00000008 .Lanon.03554fe56e826a5e89dab7811ba1a79f.1
+0000bf30 l     O .rodata	00000008 .Lanon.03554fe56e826a5e89dab7811ba1a79f.3
+0000bfc8 l     O .rodata	00000010 .Lanon.03554fe56e826a5e89dab7811ba1a79f.6
+0000bfd8 l     O .rodata	00000010 .Lanon.03554fe56e826a5e89dab7811ba1a79f.7
+000016a4 l     F .text	00000458 .hidden _ZN4core4sync6atomic23atomic_compare_exchange17h00bdad4426f09d8aE
+00000000 l    df *ABS*	00000000 3qat5ak183c4yf0b6tuzs22bk
+00001b18 l     F .text	0000011c _ZN30microbit_async_display_example5board8Microbit3new17h648d50a28a9942e3E
+00001c34 l     F .text	00000024 _ZN30microbit_async_display_example5board10output_pin17hb5e4c2b744808fb5E
+00001afc l     F .text	0000001c .hidden _ZN90_$LT$microbit_async_display_example..board..Microbit$u20$as$u20$core..default..Default$GT$7default17h038694f592831baeE
+00000000 l    df *ABS*	00000000 40kqnhsl0xt2esneajgey35k2
+00001c58 l     F .text	00000012 .hidden _ZN5defmt6export11into_result17hdf4031145057e60aE
+00001c6a l     F .text	00000022 .hidden _ZN5defmt6export3fmt17h656bee50977e5e37E
+00001c8c l     F .text	00000022 .hidden _ZN5defmt6export3fmt17hb6bcda53adefe2a9E
+00000000 l    df *ABS*	00000000 4c3uhtxny9n5qal7nnqlik27r
+0000bfe8 l     O .rodata	0000000d .Lanon.5eac2f61d813b6766dcaf33dcbc6e470.0
+00001f28 l     F .text	0000001a .hidden _ZN30microbit_async_display_example18__cortex_m_rt_main28_$u7b$$u7b$closure$u7d$$u7d$17h896f7c19bfe0cb50E
+00001cb0 l     F .text	0000025c .hidden _ZN30microbit_async_display_example21____embassy_main_task28_$u7b$$u7b$closure$u7d$$u7d$17h5f7f56bc54b55794E
+00001f0c l     F .text	00000010 .hidden _ZN30microbit_async_display_example14__embassy_main28_$u7b$$u7b$closure$u7d$$u7d$17h63f3b2467cca3291E
+00001f1c l     F .text	0000000c .hidden _ZN30microbit_async_display_example18__cortex_m_rt_main13__make_static17hcd078f9d8ccbce0dE
+00000000 l    df *ABS*	00000000 4xtnd4x6jnn2huwqmrqr41m7e
+20000050 l     O .bss	00000004 _ZN30microbit_async_display_example14__embassy_main4POOL17h3578da521cc22191E
+00001f88 l     F .text	0000001a _ZN30microbit_async_display_example18__cortex_m_rt_main17h00ef583cce6b19d8E
+00001f42 l     F .text	0000001a .hidden _ZN30microbit_async_display_example21____embassy_main_task17h310dce9c875c5abdE
+00001f5c l     F .text	00000024 .hidden _ZN30microbit_async_display_example14__embassy_main17h3761b8d6293c33d6E
+00000000 l    df *ABS*	00000000 55i7b25kvgu63rx6go4xluj1z
+00001fa2 l     F .text	00000012 .hidden _ZN5defmt5impls10primitives55_$LT$impl$u20$defmt..traits..Format$u20$for$u20$str$GT$11_format_tag17h283c06a84b929d89E
+00001fb4 l     F .text	00000012 .hidden _ZN5defmt5impls10primitives55_$LT$impl$u20$defmt..traits..Format$u20$for$u20$str$GT$12_format_data17h63ee45bd70361d5eE
+00000000 l    df *ABS*	00000000 59cni4wuhnulen9gj8ittgl2f
+0000bff5 l     O .rodata	00000119 .Lanon.f18f461cb51936039fdb7894c3c7fff4.0
+00001ffa l     F .text	0000000e .hidden _ZN4core5alloc6layout6Layout5align17heea29df1c3211099E
+00001fec l     F .text	0000000e .hidden _ZN4core5alloc6layout6Layout4size17h30fba2bb97d3f226E
+00001fc6 l     F .text	00000026 .hidden _ZN4core5alloc6layout6Layout25from_size_align_unchecked18precondition_check17hc90b318fc1832671E
+00000000 l    df *ABS*	00000000 5s4nzvpsu8g6a69bqhxlhtcua
+0000c190 l     O .rodata	00000010 .Lanon.63214ac159895ff6570f9e04790371b6.1
+00002068 l     F .text	00000016 .hidden _ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h9839e29032e1f0c6E
+00002008 l     F .text	00000060 .hidden _ZN110_$LT$core..iter..adapters..enumerate..Enumerate$LT$I$GT$$u20$as$u20$core..iter..traits..iterator..Iterator$GT$4next17h8bae91d0affa80cfE
+00000000 l    df *ABS*	00000000 5uwntpjb5968ly43jo2szkw40
+0000207e l     F .text	00000040 .hidden _ZN15embassy_futures6select6select17hf183cd5b3a37f702E
+000020be l     F .text	00000016 .hidden _ZN59_$LT$F$u20$as$u20$core..future..into_future..IntoFuture$GT$11into_future17h3559e0cd8cd639c6E
+000020d4 l     F .text	00000064 .hidden _ZN93_$LT$embassy_futures..select..Select$LT$A$C$B$GT$$u20$as$u20$core..future..future..Future$GT$4poll17hfc65bf7486977cc1E
+00000000 l    df *ABS*	00000000 5z2ru5g0lgfnqn3zt8wfrj5xm
+00002150 l     F .text	0000000c _ZN59_$LT$F$u20$as$u20$core..future..into_future..IntoFuture$GT$11into_future17h904069b77dba90d6E
+0000215c l     F .text	00000138 _ZN30microbit_async_display_example6button17show_button_press28_$u7b$$u7b$closure$u7d$$u7d$17heb53b11ae83934dcE
+0000c1b0 l     O .rodata	00000010 .Lanon.2b07d116ccc34a249efb8a88324ec3c3.1
+0000c1c4 l     O .rodata	00000028 .Lanon.2b07d116ccc34a249efb8a88324ec3c3.3
+0000c1c0 l     O .rodata	00000001 .Lanon.2b07d116ccc34a249efb8a88324ec3c3.2
+0000c1ec l     O .rodata	00000010 .Lanon.2b07d116ccc34a249efb8a88324ec3c3.4
+0000c200 l     O .rodata	00000028 .Lanon.2b07d116ccc34a249efb8a88324ec3c3.6
+0000c1fc l     O .rodata	00000001 .Lanon.2b07d116ccc34a249efb8a88324ec3c3.5
+0000c228 l     O .rodata	00000010 .Lanon.2b07d116ccc34a249efb8a88324ec3c3.7
+00002294 l     F .text	000000e0 .hidden _ZN30microbit_async_display_example6button21handle_button_a_press28_$u7b$$u7b$closure$u7d$$u7d$17h0cdeba80cc131c84E
+00002374 l     F .text	000000e0 .hidden _ZN30microbit_async_display_example6button21handle_button_b_press28_$u7b$$u7b$closure$u7d$$u7d$17hd71b09cbe5d58a5dE
+00002144 l     F .text	0000000c .hidden _ZN59_$LT$F$u20$as$u20$core..future..into_future..IntoFuture$GT$11into_future17h56932797be1dea54E
+00002138 l     F .text	0000000c .hidden _ZN59_$LT$F$u20$as$u20$core..future..into_future..IntoFuture$GT$11into_future17h4688f24b45962794E
+00000000 l    df *ABS*	00000000 65oaeamtz10qzhraexa3k7ahh
+00002454 l     F .text	00000026 .hidden _ZN4core4task4wake7Context10from_waker17hb97e09dee403d1d5E
+00000000 l    df *ABS*	00000000 6srz4on9zqlhl9yixa484hnwy
+0000247a l     F .text	00000046 .hidden _ZN11embassy_nrf4gpio4Flex12set_as_input17h65c3916afa65d5b7E
+000024c0 l     F .text	00000042 .hidden _ZN11embassy_nrf4gpio4Flex13set_as_output17h566bd5c4dfe7f7e6E
+00002502 l     F .text	00000014 .hidden _ZN11embassy_nrf4gpio4Flex7set_low17h1ee4eef4c91d7346E
+00002516 l     F .text	00000014 .hidden _ZN11embassy_nrf4gpio4Flex8set_high17hca85bf3df5ae8d49E
+0000252a l     F .text	0000000e .hidden _ZN90_$LT$embassy_nrf..gpio..AnyPin$u20$as$u20$embassy_hal_internal..peripheral..Peripheral$GT$15clone_unchecked17hefbc872d95c0faafE
+00000000 l    df *ABS*	00000000 6xz9mu7uoqho2so9dc9w569ua
+00002538 l     F .text	0000000a .hidden _ZN5defmt5impls10primitives57_$LT$impl$u20$defmt..traits..Format$u20$for$u20$$RF$T$GT$11_format_tag17hdf571e4e0b25c09bE
+00002542 l     F .text	00000016 .hidden _ZN5defmt5impls10primitives57_$LT$impl$u20$defmt..traits..Format$u20$for$u20$$RF$T$GT$12_format_data17hf97a35e56888da7bE
+00000000 l    df *ABS*	00000000 8345b7gowvlzg4bkrq9p707vz
+00002564 l     F .text	0000000c .hidden _ZN90_$LT$core..ptr..non_null..NonNull$LT$T$GT$$u20$as$u20$core..convert..From$LT$$RF$T$GT$$GT$4from17hb6b6b95f3e6c2b63E
+00002558 l     F .text	0000000c .hidden _ZN4core3ptr8non_null16NonNull$LT$T$GT$4cast17h9c4595d49df83306E
+00000000 l    df *ABS*	00000000 8kfsgfs1h2p15qspp2ymos5l2
+000027e0 l     F .text	00000010 _ZN4core3ptr45drop_in_place$LT$embassy_nrf..gpio..Input$GT$17hcd4a4d5430efcce3E
+00002686 l     F .text	0000001c _ZN4core3ptr124drop_in_place$LT$microbit_async_display_example..display..LedMatrix$LT$embassy_nrf..gpio..Output$C$5_usize$C$5_usize$GT$$GT$17hafe72f622a6480cbE
+00002810 l     F .text	0000002c _ZN4core3ptr67drop_in_place$LT$$u5b$embassy_nrf..gpio..Output$u3b$$u20$5$u5d$$GT$17h1a1120b6b564e74dE
+000026d2 l     F .text	00000030 _ZN4core3ptr126drop_in_place$LT$embassy_nrf..gpiote..$LT$impl$u20$embassy_nrf..gpio..Input$GT$..wait_for_low..$u7b$$u7b$closure$u7d$$u7d$$GT$17h3f570073102ce1e6E
+000027d0 l     F .text	00000010 _ZN4core3ptr44drop_in_place$LT$embassy_nrf..gpio..Flex$GT$17h908fde96a0227d1cE
+000027f0 l     F .text	00000010 _ZN4core3ptr46drop_in_place$LT$embassy_nrf..gpio..Output$GT$17ha988fba2f40c2f04E
+00002570 l     F .text	00000014 .hidden _ZN4core3ops8function5FnMut8call_mut17h8c995993caba2854E
+00002784 l     F .text	00000032 .hidden _ZN4core3ptr172drop_in_place$LT$microbit_async_display_example..display..LedMatrix$LT$embassy_nrf..gpio..Output$C$5_usize$C$5_usize$GT$..scroll_with_speed..$u7b$$u7b$closure$u7d$$u7d$$GT$17h16dab7023a742d18E
+00002734 l     F .text	00000028 .hidden _ZN4core3ptr162drop_in_place$LT$microbit_async_display_example..display..LedMatrix$LT$embassy_nrf..gpio..Output$C$5_usize$C$5_usize$GT$..animate..$u7b$$u7b$closure$u7d$$u7d$$GT$17h4f3b2f4d8ed6f4fbE
+00002702 l     F .text	00000032 .hidden _ZN4core3ptr161drop_in_place$LT$microbit_async_display_example..display..LedMatrix$LT$embassy_nrf..gpio..Output$C$5_usize$C$5_usize$GT$..scroll..$u7b$$u7b$closure$u7d$$u7d$$GT$17h85843f94cba3737aE
+00002656 l     F .text	00000030 .hidden _ZN4core3ptr111drop_in_place$LT$microbit_async_display_example..button..handle_button_b_press..$u7b$$u7b$closure$u7d$$u7d$$GT$17h4fdc53954e00fc5dE
+000027b6 l     F .text	0000001a .hidden _ZN4core3ptr273drop_in_place$LT$embassy_futures..select..Select$LT$embassy_nrf..gpiote..$LT$impl$u20$embassy_nrf..gpio..Input$GT$..wait_for_low..$u7b$$u7b$closure$u7d$$u7d$$C$embassy_nrf..gpiote..$LT$impl$u20$embassy_nrf..gpio..Input$GT$..wait_for_low..$u7b$$u7b$closure$u7d$$u7d$$GT$$GT$17h39035fe5402c4c5aE
+00002626 l     F .text	00000030 .hidden _ZN4core3ptr111drop_in_place$LT$microbit_async_display_example..button..handle_button_a_press..$u7b$$u7b$closure$u7d$$u7d$$GT$17ha00e66515095156bE
+0000275c l     F .text	00000028 .hidden _ZN4core3ptr162drop_in_place$LT$microbit_async_display_example..display..LedMatrix$LT$embassy_nrf..gpio..Output$C$5_usize$C$5_usize$GT$..display..$u7b$$u7b$closure$u7d$$u7d$$GT$17hbd06fe710c393648E
+000025f4 l     F .text	00000032 .hidden _ZN4core3ptr107drop_in_place$LT$microbit_async_display_example..button..show_button_press..$u7b$$u7b$closure$u7d$$u7d$$GT$17h71455d588d482409E
+00002584 l     F .text	00000070 .hidden _ZN4core3ptr103drop_in_place$LT$microbit_async_display_example..____embassy_main_task..$u7b$$u7b$closure$u7d$$u7d$$GT$17h34d488bf9b5b1562E
+000026a2 l     F .text	00000030 .hidden _ZN4core3ptr125drop_in_place$LT$embassy_nrf..gpiote..$LT$impl$u20$embassy_nrf..gpio..Flex$GT$..wait_for_low..$u7b$$u7b$closure$u7d$$u7d$$GT$17h498afd1fb67bb777E
+00002800 l     F .text	00000010 .hidden _ZN4core3ptr57drop_in_place$LT$embassy_nrf..gpiote..PortInputFuture$GT$17h81713ec0a2a8a8f3E
+00000000 l    df *ABS*	00000000 8s961j674ik8wuuiyjk0y5c5t
+0000283c l     F .text	0000000e .hidden _ZN4core3mem6forget17h1c783cea6f02fee8E
+0000284a l     F .text	0000000c .hidden _ZN4core3mem6forget17h2c57308c447e7258E
+00000000 l    df *ABS*	00000000 9lvyc4652v51yf7n1j2orde8r
+00002856 l     F .text	00000014 _ZN11embassy_nrf6gpiote15PortInputFuture3new17h2511a8c6ec13a049E
+0000286a l     F .text	000000ce _ZN11embassy_nrf6gpiote41_$LT$impl$u20$embassy_nrf..gpio..Flex$GT$12wait_for_low28_$u7b$$u7b$closure$u7d$$u7d$17hc1cde9240cf3c9ccE
+00002938 l     F .text	00000032 _ZN11embassy_nrf6gpiote41_$LT$impl$u20$embassy_nrf..gpio..Flex$GT$12wait_for_low28_$u7b$$u7b$closure$u7d$$u7d$28_$u7b$$u7b$closure$u7d$$u7d$17h50b0b5805d768ae4E
+00002a20 l     F .text	0000000e _ZN59_$LT$F$u20$as$u20$core..future..into_future..IntoFuture$GT$11into_future17he34ff32b5337e15fE
+0000c2a0 l     O .rodata	00000010 .Lanon.2e8ad8643fdb95b3c238a6fa60bcd7a6.1
+00002a0e l     F .text	00000012 _ZN59_$LT$F$u20$as$u20$core..future..into_future..IntoFuture$GT$11into_future17h71c96032ece9205aE
+0000c2b0 l     O .rodata	00000010 .Lanon.2e8ad8643fdb95b3c238a6fa60bcd7a6.2
+0000296a l     F .text	000000a4 .hidden _ZN11embassy_nrf6gpiote42_$LT$impl$u20$embassy_nrf..gpio..Input$GT$12wait_for_low28_$u7b$$u7b$closure$u7d$$u7d$17h8ee9a3f34df9471fE
+00000000 l    df *ABS*	00000000 9ogrgdybrrc7wymnda1qrvk61
+00002a2e l     F .text	00000010 _ZN16embassy_executor3raw4util19UninitCell$LT$T$GT$10as_mut_ptr17h1e501050c13a6452E
+00002a7a l     F .text	00000010 .hidden _ZN16embassy_executor3raw4util19UninitCell$LT$T$GT$6as_mut17hdd982ef03b686451E
+00002a3e l     F .text	00000014 .hidden _ZN16embassy_executor3raw4util19UninitCell$LT$T$GT$13drop_in_place17hcaf4ca6de9f39e37E
+00002a8a l     F .text	00000012 .hidden _ZN16embassy_executor3raw4util23SyncUnsafeCell$LT$T$GT$3set17h518a18d14392673eE
+00002a52 l     F .text	00000028 .hidden _ZN16embassy_executor3raw4util19UninitCell$LT$T$GT$14write_in_place17hfca5611d46463744E
+00000000 l    df *ABS*	00000000 a8j51t5isnc58c4yh4z9obmkv
+0000c334 l     O .rodata	00000010 .Lanon.f65c469a25d0f10ebb7107f18128fcff.1
+00002a9c l     F .text	0000007a .hidden _ZN4core3num23_$LT$impl$u20$usize$GT$16next_multiple_of17h71629f7c2fa77519E
+00000000 l    df *ABS*	00000000 aom8eiyt71yeov8lkrys8sm88
+00002b24 l     F .text	0000000e .hidden _ZN16critical_section5mutex14Mutex$LT$T$GT$6borrow17he86f423c40f64adeE
+00002b16 l     F .text	0000000e .hidden _ZN16critical_section5mutex14Mutex$LT$T$GT$6borrow17h77d965106c134d4bE
+00000000 l    df *ABS*	00000000 b3e9yswsvr4mjeye0xvk0g7li
+00002b32 l     F .text	00000012 .hidden _ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$7is_null17hc47244a84bb37139E
+00000000 l    df *ABS*	00000000 bddnn6ehhea3nsi7sofbe9gzi
+00002b44 l     F .text	00000028 .hidden _ZN4core4bool22_$LT$impl$u20$bool$GT$4then17he2b205a9f9b5d805E
+00000000 l    df *ABS*	00000000 bexqasqe74otksbzoogjdqms2
+00002b6c l     F .text	00000012 _ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$8iter_mut17h1d3ab3faf84c56bcE
+0000c350 l     O .rodata	00000010 .Lanon.032f2ce6783d29844e76c855c775b1a8.1
+0000c360 l     O .rodata	00000010 .Lanon.032f2ce6783d29844e76c855c775b1a8.2
+0000c370 l     O .rodata	00000010 .Lanon.032f2ce6783d29844e76c855c775b1a8.3
+0000c380 l     O .rodata	00000010 .Lanon.032f2ce6783d29844e76c855c775b1a8.4
+0000c390 l     O .rodata	00000010 .Lanon.032f2ce6783d29844e76c855c775b1a8.5
+00002b7e l     F .text	00000052 .hidden _ZN30microbit_async_display_example5types18Frame$LT$_$C$_$GT$5empty17h8a63f91ef58e935cE
+00002be6 l     F .text	00000034 .hidden _ZN30microbit_async_display_example5types18Frame$LT$_$C$_$GT$5clear17h7095c9faaf3a5846E
+00002c1a l     F .text	0000003a .hidden _ZN30microbit_async_display_example5types18Frame$LT$_$C$_$GT$6is_set17hf08d897d8d086efdE
+00002cd2 l     F .text	0000005e .hidden _ZN30microbit_async_display_example5types18Frame$LT$_$C$_$GT$10shift_left17h5cb7b08e0f66087bE
+00002d30 l     F .text	0000005e .hidden _ZN30microbit_async_display_example5types18Frame$LT$_$C$_$GT$11shift_right17h3a54ca669bd30064E
+00002c54 l     F .text	0000007e .hidden _ZN30microbit_async_display_example5types18Frame$LT$_$C$_$GT$2or17h2a9318b29343ef4fE
+00002bd0 l     F .text	00000016 .hidden _ZN30microbit_async_display_example5types18Frame$LT$_$C$_$GT$3new17h549354db15c6f16eE
+00000000 l    df *ABS*	00000000 bkei0ayw6mni1euvif3glzczg
+00002da8 l     F .text	00000014 .hidden _ZN4core6result19Result$LT$T$C$E$GT$5is_ok17h6b8f9933727becb9E
+00002d8e l     F .text	0000001a .hidden _ZN4core6result19Result$LT$T$C$E$GT$2ok17h56b6b61e96f771c7E
+00002dbc l     F .text	0000000e .hidden _ZN87_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$defmt..export..traits..IntoResult$GT$11into_result17h0a61fded342268acE
+00000000 l    df *ABS*	00000000 bucl4qbuyl7d11o9ml58sh3ac
+00002e24 l     F .text	0000001c .hidden _ZN30microbit_async_display_example6button21handle_button_b_press17ha46feb442fbaf9a9E
+00002e08 l     F .text	0000001c .hidden _ZN30microbit_async_display_example6button21handle_button_a_press17hee6c5341e3c2e2baE
+00002dca l     F .text	0000003e .hidden _ZN30microbit_async_display_example6button17show_button_press17h858d11b7128cd875E
+00000000 l    df *ABS*	00000000 byhzrpqf63k9hx6plg1psmp69
+00002ea8 l     F .text	00000042 _ZN16embassy_executor7spawner7Spawner5spawn17hc2fd789850740ad9E
+00002e40 l     F .text	00000010 .hidden _ZN16embassy_executor7spawner19SpawnToken$LT$S$GT$10new_failed17h14713d30cecec555E
+00002e50 l     F .text	00000010 .hidden _ZN16embassy_executor7spawner19SpawnToken$LT$S$GT$3new17h7e8bfa4500b6e3ffE
+00002e60 l     F .text	00000048 .hidden _ZN16embassy_executor7spawner7Spawner10must_spawn17hfa47033edf7cc1b8E
+00000000 l    df *ABS*	00000000 ca1ket362iwg2bax01klewiqj
+00002eea l     F .text	0000002e .hidden _ZN16critical_section4with17had406faee0062bd7E
+00000000 l    df *ABS*	00000000 ckicscn6u9qnn1fv8025hfm5n
+00003066 l     F .text	0000001a _ZN11embassy_nrf4gpio4Flex3new17hb5ba73ecdff41566E
+000030ee l     F .text	00000018 _ZN20embassy_hal_internal10peripheral10Peripheral8into_ref17hbeca4ff3406c5260E
+00003106 l     F .text	00000012 .hidden _ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$8iter_mut17h2b28b071caa8b06cE
+00003080 l     F .text	00000028 .hidden _ZN11embassy_nrf4gpio5Input3new17h1bfec48e2faf3f52E
+000030a8 l     F .text	00000046 .hidden _ZN11embassy_nrf4gpio6Output3new17hd692aeb55207d18bE
+00002f18 l     F .text	000000aa .hidden _ZN11embassy_nrf4gpio4Flex12set_as_input28_$u7b$$u7b$closure$u7d$$u7d$17h78ecabd4ec162755E
+00002fc2 l     F .text	000000a4 .hidden _ZN11embassy_nrf4gpio4Flex13set_as_output28_$u7b$$u7b$closure$u7d$$u7d$17h703a1e8664381b5aE
+00003118 l     F .text	00000012 .hidden _ZN50_$LT$T$u20$as$u20$core..convert..Into$LT$U$GT$$GT$4into17h00f2eeabab1f54d6E
+00000000 l    df *ABS*	00000000 cl9wyh7p7pdmxo39alb27bfbp
+0000312a l     F .text	000000cc _ZN30microbit_async_display_example5fonts9frame_5x517h98f96d1f25d21acfE
+0000320a l     F .text	00000098 _ZN30microbit_async_display_example5fonts119_$LT$impl$u20$core..convert..Into$LT$microbit_async_display_example..types..Frame$LT$_$C$_$GT$$GT$$u20$for$u20$char$GT$4into17h0ed2a7425f60260fE
+0000c3bc l     O .rodata	00000005 .Lanon.e0ee941c3840e989dd2b24832ea9b099.6
+0000c3ac l     O .rodata	00000010 .Lanon.e0ee941c3840e989dd2b24832ea9b099.5
+0000c3c4 l     O .rodata	00000010 .Lanon.e0ee941c3840e989dd2b24832ea9b099.7
+0000c3e4 l     O .rodata	000001db .Lanon.e0ee941c3840e989dd2b24832ea9b099.9
+0000c3d4 l     O .rodata	00000010 .Lanon.e0ee941c3840e989dd2b24832ea9b099.8
+000031f6 l     F .text	00000014 .hidden _ZN30microbit_async_display_example5fonts117_$LT$impl$u20$core..convert..Into$LT$microbit_async_display_example..types..Frame$LT$_$C$_$GT$$GT$$u20$for$u20$u8$GT$4into17h0b58ee4b162ed695E
+00000000 l    df *ABS*	00000000 cwqqy2ghwgjizk8x2egd894jz
+000032a2 l     F .text	00000028 .hidden _ZN4core5alloc6layout6Layout3new17h392af1b5063bfc40E
+00000000 l    df *ABS*	00000000 dz5zephwndqy82y60i8bh1ud5
+000032ca l     F .text	00000014 _ZN121_$LT$embassy_hal_internal..peripheral..PeripheralRef$LT$T$GT$$u20$as$u20$embassy_hal_internal..peripheral..Peripheral$GT$15clone_unchecked17ha94899275fed16e8E
+0000332a l     F .text	00000014 _ZN66_$LT$T$u20$as$u20$embassy_hal_internal..peripheral..Peripheral$GT$15clone_unchecked17h97aec751cd94acfaE
+0000c634 l     O .rodata	00000010 .Lanon.1828695981196f7ef55217ca9633f1f2.1
+0000331c l     F .text	0000000e _ZN57_$LT$$RF$mut$u20$T$u20$as$u20$core..ops..deref..Deref$GT$5deref17h407ef373732b9ff8E
+000032de l     F .text	00000016 .hidden _ZN20embassy_hal_internal10peripheral10Peripheral8into_ref17h33e1102632a9a9bbE
+00003302 l     F .text	0000001a .hidden _ZN20embassy_hal_internal10peripheral22PeripheralRef$LT$T$GT$8map_into17head8db7c9afbb958E
+000032f4 l     F .text	0000000e .hidden _ZN20embassy_hal_internal10peripheral22PeripheralRef$LT$T$GT$3new17h2d543c4c247c72b7E
+00000000 l    df *ABS*	00000000 e9arqyq5iry2m4vku2krirpsh
+0000333e l     F .text	0000001c .hidden _ZN59_$LT$F$u20$as$u20$core..future..into_future..IntoFuture$GT$11into_future17hb4b3c43807099097E
+00000000 l    df *ABS*	00000000 e9i8gvww4l72ygciq9un001i6
+0000335a l     F .text	0000000e .hidden _ZN4core4cell13Cell$LT$T$GT$3get17h3beb6b66500aa087E
+00003376 l     F .text	00000010 .hidden _ZN4core4cell13Cell$LT$T$GT$3set17h7fa06842796ee4c0E
+00003368 l     F .text	0000000e .hidden _ZN4core4cell13Cell$LT$T$GT$3get17h5a4f70328894023eE
+00003386 l     F .text	00000010 .hidden _ZN4core4cell13Cell$LT$T$GT$3set17hbd924c25cd1bf402E
+00000000 l    df *ABS*	00000000 el81lncql7enpn036975envps
+0000c678 l     O .rodata	00000008 .Lanon.e5c7eabd1c1219b5009d9a0e8c4508ba.1
+0000c6f8 l     O .rodata	00000010 .Lanon.e5c7eabd1c1219b5009d9a0e8c4508ba.4
+000033b0 l     F .text	00000066 .hidden _ZN4core4sync6atomic14compiler_fence17h02052c57d8d5e9d5E
+00003396 l     F .text	0000001a .hidden _ZN4core4sync6atomic10AtomicBool5store17hde2be9a0f56795adE
+00003416 l     F .text	00000028 .hidden _ZN4core4sync6atomic9AtomicU3216compare_exchange17h08b568de30730aa7E
+00000000 l    df *ABS*	00000000 embassy_nrf.7d708de31c1fefe9-cgu.0
+0000348c l     F .text	00000010 _ZN11embassy_nrf4gpio6Output8set_high17hc7c753ddba9f9a3fE
+000035d8 l     F .text	00000014 _ZN11embassy_nrf4gpio4Flex8set_high17h4538f540fa1203b7E
+0000349c l     F .text	00000010 _ZN11embassy_nrf4gpio6Output7set_low17h116907f774bab9e6E
+000035ec l     F .text	00000014 _ZN11embassy_nrf4gpio4Flex7set_low17h9138ebdb8ee0479aE
+00003572 l     F .text	00000038 _ZN11embassy_nrf4gpio4Flex19set_as_disconnected17h119bb2b76b7dc3c6E
+0000c708 l     O .rodata	0000001d .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.14
+000038bc l     F .text	0000000e _ZN74_$LT$embassy_nrf..gpio..AnyPin$u20$as$u20$embassy_nrf..gpio..SealedPin$GT$8pin_port17h7eaa23fbf0d9f281E
+0000c798 l     O .rodata	00000010 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.16
+0000c7a8 l     O .rodata	00000010 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.17
+0000c7b8 l     O .rodata	00000010 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.18
+0000c808 l     O .rodata	00000010 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.32
+0000c818 l     O .rodata	00000010 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.33
+0000c828 l     O .rodata	00000010 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.34
+0000c838 l     O .rodata	00000010 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.35
+0000c7c8 l     O .rodata	00000010 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.27
+0000c7d8 l     O .rodata	00000010 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.28
+0000c7e8 l     O .rodata	00000010 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.29
+0000c7f8 l     O .rodata	00000010 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.30
+000038f8 l     F .text	00000104 _ZN11embassy_nrf6gpiote4init17hd504f0475aa8367eE
+000039fc l     F .text	0000002c _ZN11embassy_nrf6gpiote4init28_$u7b$$u7b$closure$u7d$$u7d$17haf4c64173f1fff3dE
+00003a28 l     F .text	00000014 _ZN11embassy_nrf6gpiote4init28_$u7b$$u7b$closure$u7d$$u7d$17h635d77e67bbbffbdE
+00003a3c l     F .text	0000001e _ZN11embassy_nrf6gpiote4init28_$u7b$$u7b$closure$u7d$$u7d$17h845b094dcf585a76E
+00003a5a l     F .text	00000320 _ZN11embassy_nrf6gpiote23handle_gpiote_interrupt17he2c1511239a6ad07E
+0000c848 l     O .rodata	0000001c .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.37
+0000c864 l     O .rodata	00000010 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.41
+0000c874 l     O .rodata	00000010 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.42
+0000c884 l     O .rodata	00000010 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.43
+00003db0 l     F .text	00000032 _ZN11embassy_nrf6gpiote23handle_gpiote_interrupt28_$u7b$$u7b$closure$u7d$$u7d$17h8eca5793e8dc4c89E
+00003de2 l     F .text	00000014 _ZN11embassy_nrf6gpiote23handle_gpiote_interrupt28_$u7b$$u7b$closure$u7d$$u7d$17h79ee774a9b5eb5c0E
+0000c8fc l     O .rodata	00000010 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.62
+20000094 l     O .bss	00000180 _ZN11embassy_nrf6gpiote11PORT_WAKERS17h3ac5f705ffce9db5E
+0000c90c l     O .rodata	00000010 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.63
+00003d7a l     F .text	00000036 _ZN11embassy_nrf6gpiote23handle_gpiote_interrupt28_$u7b$$u7b$closure$u7d$$u7d$17hb38ee3fb2b6a1f6eE
+0000c91c l     O .rodata	00000010 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.64
+0000c92c l     O .rodata	00000010 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.65
+0000c93c l     O .rodata	00000010 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.66
+00003e98 l     F .text	00000032 _ZN78_$LT$embassy_nrf..gpiote..PortInputFuture$u20$as$u20$core..ops..drop..Drop$GT$4drop28_$u7b$$u7b$closure$u7d$$u7d$17h518974b3ed3634eaE
+0000c94c l     O .rodata	00000010 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.69
+00003fae l     F .text	00000016 _ZN11embassy_nrf10uicr_write17h4a6af9e289b36357E
+00003fc4 l     F .text	000001b0 _ZN11embassy_nrf17uicr_write_masked17h77ba486ba6d7311eE
+00004174 l     F .text	0000002a _ZN11embassy_nrf17uicr_write_masked28_$u7b$$u7b$closure$u7d$$u7d$17h74b6a6b2947ed2deE
+0000419e l     F .text	0000000c _ZN11embassy_nrf17uicr_write_masked28_$u7b$$u7b$closure$u7d$$u7d$17hfe351852d5f3ea43E
+00004752 l     F .text	0000001e _ZN65_$LT$embassy_nrf..WriteResult$u20$as$u20$core..cmp..PartialEq$GT$2eq17h423fc7d40d935f5bE
+0000c95d l     O .rodata	00000001 .Lanon.c7ee460fbe5e5cafa85acbbcf56ab5fc.75
+00004628 l     F .text	0000002a _ZN11embassy_nrf4init28_$u7b$$u7b$closure$u7d$$u7d$17h5e1651b8ad957fcdE
+00004652 l     F .text	0000002a _ZN11embassy_nrf4init28_$u7b$$u7b$closure$u7d$$u7d$17hc4470cd00ebec35dE
+0000467c l     F .text	0000002a _ZN11embassy_nrf4init28_$u7b$$u7b$closure$u7d$$u7d$17h2f5f1380b7a8dfc8E
+000046a6 l     F .text	00000048 _ZN11embassy_nrf4init28_$u7b$$u7b$closure$u7d$$u7d$17h2f896961792aba52E
+000046ee l     F .text	00000046 _ZN11embassy_nrf4init28_$u7b$$u7b$closure$u7d$$u7d$17h3112f2de68da71ccE
+00004734 l     F .text	0000001e _ZN11embassy_nrf4init28_$u7b$$u7b$closure$u7d$$u7d$17h817849de6d2b2fb9E
+0000477a l     F .text	0000000a _ZN11embassy_nrf6gpiote20__cortex_m_rt_GPIOTE17h0f964820b9d1e326E
+00000000 l    df *ABS*	00000000 embassy_nrf.7d708de31c1fefe9-cgu.1
+000048f2 l     F .text	000000ba _ZN4core3ptr13read_volatile18precondition_check17h5518077a310af003E
+0000c988 l     O .rodata	00000008 .Lanon.c172fdc47fa9660231392d1223c8698e.1
+0000caec l     O .rodata	00000010 .Lanon.c172fdc47fa9660231392d1223c8698e.5
+0000c990 l     O .rodata	000000e3 .Lanon.c172fdc47fa9660231392d1223c8698e.2
+00004b4e l     F .text	000000bc _ZN4core3ptr14write_volatile18precondition_check17h72aeb3046dcc2a0fE
+0000cafc l     O .rodata	000000e4 .Lanon.c172fdc47fa9660231392d1223c8698e.6
+00005198 l     F .text	00000044 _ZN11embassy_nrf4chip96_$LT$impl$u20$embassy_nrf..gpio..SealedPin$u20$for$u20$embassy_nrf..chip..peripherals..P0_23$GT$8pin_port17h358d9d3716d79d19E
+00005088 l     F .text	00000044 _ZN11embassy_nrf4chip96_$LT$impl$u20$embassy_nrf..gpio..SealedPin$u20$for$u20$embassy_nrf..chip..peripherals..P0_15$GT$8pin_port17hc7a64c13d1a7181eE
+00005000 l     F .text	00000044 _ZN11embassy_nrf4chip96_$LT$impl$u20$embassy_nrf..gpio..SealedPin$u20$for$u20$embassy_nrf..chip..peripherals..P0_11$GT$8pin_port17ha8514a72034c7481E
+00005264 l     F .text	00000044 _ZN11embassy_nrf4chip96_$LT$impl$u20$embassy_nrf..gpio..SealedPin$u20$for$u20$embassy_nrf..chip..peripherals..P0_30$GT$8pin_port17hd3d83ef40fcdd660E
+000051dc l     F .text	00000044 _ZN11embassy_nrf4chip96_$LT$impl$u20$embassy_nrf..gpio..SealedPin$u20$for$u20$embassy_nrf..chip..peripherals..P0_24$GT$8pin_port17h31bfae696801fae9E
+00005154 l     F .text	00000044 _ZN11embassy_nrf4chip96_$LT$impl$u20$embassy_nrf..gpio..SealedPin$u20$for$u20$embassy_nrf..chip..peripherals..P0_22$GT$8pin_port17hf910bdf18bcea23fE
+000050cc l     F .text	00000044 _ZN11embassy_nrf4chip96_$LT$impl$u20$embassy_nrf..gpio..SealedPin$u20$for$u20$embassy_nrf..chip..peripherals..P0_19$GT$8pin_port17h794175a3d2761997E
+00005044 l     F .text	00000044 _ZN11embassy_nrf4chip96_$LT$impl$u20$embassy_nrf..gpio..SealedPin$u20$for$u20$embassy_nrf..chip..peripherals..P0_14$GT$8pin_port17hf48498bef11bf6dcE
+000052ec l     F .text	00000044 _ZN11embassy_nrf4chip96_$LT$impl$u20$embassy_nrf..gpio..SealedPin$u20$for$u20$embassy_nrf..chip..peripherals..P1_05$GT$8pin_port17hc01e6f02c224c265E
+000052a8 l     F .text	00000044 _ZN11embassy_nrf4chip96_$LT$impl$u20$embassy_nrf..gpio..SealedPin$u20$for$u20$embassy_nrf..chip..peripherals..P0_31$GT$8pin_port17h2b32ec663cfbd7daE
+00005110 l     F .text	00000044 _ZN11embassy_nrf4chip96_$LT$impl$u20$embassy_nrf..gpio..SealedPin$u20$for$u20$embassy_nrf..chip..peripherals..P0_21$GT$8pin_port17hb0afb392642fc6ebE
+00005220 l     F .text	00000044 _ZN11embassy_nrf4chip96_$LT$impl$u20$embassy_nrf..gpio..SealedPin$u20$for$u20$embassy_nrf..chip..peripherals..P0_28$GT$8pin_port17hddf99687988b51b9E
+0000cc50 l     O .rodata	00000010 .Lanon.c172fdc47fa9660231392d1223c8698e.32
+0000cc60 l     O .rodata	00000010 .Lanon.c172fdc47fa9660231392d1223c8698e.35
+0000cc70 l     O .rodata	00000010 .Lanon.c172fdc47fa9660231392d1223c8698e.36
+0000cc80 l     O .rodata	00000010 .Lanon.c172fdc47fa9660231392d1223c8698e.39
+0000cc90 l     O .rodata	00000010 .Lanon.c172fdc47fa9660231392d1223c8698e.41
+0000cca0 l     O .rodata	00000010 .Lanon.c172fdc47fa9660231392d1223c8698e.42
+0000ccb0 l     O .rodata	00000010 .Lanon.c172fdc47fa9660231392d1223c8698e.43
+0000ccc0 l     O .rodata	00000010 .Lanon.c172fdc47fa9660231392d1223c8698e.44
+0000ccd0 l     O .rodata	00000010 .Lanon.c172fdc47fa9660231392d1223c8698e.48
+0000cce0 l     O .rodata	00000010 .Lanon.c172fdc47fa9660231392d1223c8698e.50
+0000ccf0 l     O .rodata	00000010 .Lanon.c172fdc47fa9660231392d1223c8698e.51
+0000cd00 l     O .rodata	00000010 .Lanon.c172fdc47fa9660231392d1223c8698e.57
+00004c0a l     F .text	00000022 .hidden _ZN74_$LT$nrf_pac..inner..gpio..vals..Sense$u20$as$u20$core..cmp..PartialEq$GT$2eq17h381631bc75c37fabE
+00004c2c l     F .text	0000000a .hidden _ZN8cortex_m3asm3dsb17h7c625381e317ba95E
+00004c36 l     F .text	0000000a .hidden _ZN8cortex_m3asm3nop17hdc29cfb006c9c898E
+00004d00 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals4USBD5steal17h831b2b75cab83c9eE
+00004d06 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals4RTC05steal17h3dcb732d3e61e857E
+00004d0c l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals4RTC15steal17hab8e989493402ed8E
+00004d12 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals4RTC25steal17h4ea34a9a3c75cda8E
+00004d18 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals3WDT5steal17h71773c30a8ed10d6E
+00004d1e l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals4NVMC5steal17h36905a153901b205E
+00004d24 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals3RNG5steal17h6fb9467942c7ce0dE
+00004d2a l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals6UARTE05steal17he8905746d088885dE
+00004d30 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals6UARTE15steal17hdcbf21a9f6a028a2E
+00004d36 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals7TWISPI05steal17h1eafde0f980a8b35E
+00004d3c l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals7TWISPI15steal17h7465adf8287be503E
+00004d42 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals4SPI25steal17h099cf5cfeba607f5E
+00004d48 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals4SPI35steal17h48ef900873297160E
+00004d4e l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5SAADC5steal17hc29c6bf22e816fa6E
+00004d54 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals4PWM05steal17h1c250283e4e62fe4E
+00004d5a l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals4PWM15steal17h96a2f670b62fcb05E
+00004d60 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals4PWM25steal17h265482d7a652d10fE
+00004d66 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals4PWM35steal17hc8cc901cde87a113E
+00004d6c l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals6TIMER05steal17h3eed9115f88093e5E
+00004d72 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals6TIMER15steal17h9b3253f53de00a3cE
+00004d78 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals6TIMER25steal17h08f872dea7923ebcE
+00004d7e l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals6TIMER35steal17hd458bd37848577fcE
+00004d84 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals6TIMER45steal17h6e15498fbbd8d6a5E
+00004d8a l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals10GPIOTE_CH05steal17h63baeea7506715a7E
+00004d90 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals10GPIOTE_CH15steal17hcb50899e49745a58E
+00004d96 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals10GPIOTE_CH25steal17h8aa85f5d207dbf03E
+00004d9c l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals10GPIOTE_CH35steal17h8442212c5053cef4E
+00004da2 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals10GPIOTE_CH45steal17he95f3d348d9cb6a3E
+00004da8 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals10GPIOTE_CH55steal17hd8f9f1624922b683E
+00004dae l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals10GPIOTE_CH65steal17hd9217712c04ed1cfE
+00004db4 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals10GPIOTE_CH75steal17h7e988b98d559527bE
+00004dba l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals7PPI_CH05steal17h9e2ca79ae2760068E
+00004dc0 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals7PPI_CH15steal17h18510a8359df704fE
+00004dc6 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals7PPI_CH25steal17h70644a591145d545E
+00004dcc l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals7PPI_CH35steal17hcb85125b0d1dfc53E
+00004dd2 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals7PPI_CH45steal17h7d9510b8346c280dE
+00004dd8 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals7PPI_CH55steal17h5f3c7e39316694a4E
+00004dde l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals7PPI_CH65steal17hfaee938917477b28E
+00004de4 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals7PPI_CH75steal17hb8e6a1fc056a1477E
+00004dea l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals7PPI_CH85steal17h2c75b35220d11617E
+00004df0 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals7PPI_CH95steal17h1d3175ce4d787a14E
+00004df6 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH105steal17h637c4add97286734E
+00004dfc l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH115steal17h9305cd1b3eabc760E
+00004e02 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH125steal17h1a321f60d0af35f0E
+00004e08 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH135steal17hf3dccc2ecb612f26E
+00004e0e l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH145steal17hf0f6ec3ea0d3a84cE
+00004e14 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH155steal17h34ea9af624039a3fE
+00004e1a l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH165steal17hb9955dde91bc577bE
+00004e20 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH175steal17h8300fd6c8a027842E
+00004e26 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH185steal17hfb9da8be8cfe0a0cE
+00004e2c l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH195steal17h4c1ecbadbdd01541E
+00004e32 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH205steal17h5d6d0efc05a524dfE
+00004e38 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH215steal17h9bb207139b4ce9eeE
+00004e3e l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH225steal17h64fecebfad31af9cE
+00004e44 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH235steal17h20e5e50f8cf9aca1E
+00004e4a l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH245steal17h2616a5f83ef38f71E
+00004e50 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH255steal17h0e4252fe4ab4949aE
+00004e56 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH265steal17h244bac9a17de45d0E
+00004e5c l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH275steal17h1bae714df300d67fE
+00004e62 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH285steal17hd769a5f4c199d6b3E
+00004e68 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH295steal17h5898461322066a3cE
+00004e6e l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH305steal17hcf7bc8d0fb8122fbE
+00004e74 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals8PPI_CH315steal17h20c147ac67fae688E
+00004e7a l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals10PPI_GROUP05steal17he6d6b977de0e042eE
+00004e80 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals10PPI_GROUP15steal17h18e588d571020b18E
+00004e86 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals10PPI_GROUP25steal17hc5da26d5aff30d56E
+00004e8c l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals10PPI_GROUP35steal17h49a30d9e8a72c42dE
+00004e92 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals10PPI_GROUP45steal17h3fdb946dc61f728cE
+00004e98 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals10PPI_GROUP55steal17h9ac5aae8b843a0a7E
+00004e9e l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_005steal17he98c4ab6be4e982dE
+00004ea4 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_015steal17h78e46cb73f7cd361E
+00004eaa l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_025steal17h15034e4a5ba80129E
+00004eb0 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_035steal17h913437aceba08513E
+00004eb6 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_045steal17he48d358c1529598cE
+00004ebc l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_055steal17h4d59b3cb1bbef529E
+00004ec2 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_065steal17h2523470a41c2310cE
+00004ec8 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_075steal17h05f8444ed15fee87E
+00004ece l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_085steal17h328907314403a854E
+00004ed4 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_095steal17h0dcbff918fc14c48E
+00004eda l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_105steal17h2738b3b8063cb581E
+00004ee0 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_115steal17h2a6b024c454b65b6E
+00004ee6 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_125steal17hd0841cb22217bd25E
+00004eec l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_135steal17h025b61ce46064278E
+00004ef2 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_145steal17h76e738ec3083dc0aE
+00004ef8 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_155steal17h3cbabb161c6270f3E
+00004efe l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_165steal17he7a8a8a37b7ddb6eE
+00004f04 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_175steal17hbefd5d42becb444cE
+00004f0a l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_195steal17h2db59416574f9f41E
+00004f10 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_205steal17h98da990734f1715bE
+00004f16 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_215steal17h4ec239d3dc08ef06E
+00004f1c l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_225steal17h5a1e91c80085bd78E
+00004f22 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_235steal17hd7f38ddf80ab8f12E
+00004f28 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_245steal17hc9a009f4ae9b0abbE
+00004f2e l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_255steal17h6ea34576ee2b3230E
+00004f34 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_265steal17h0284dcc87c0c0a84E
+00004f3a l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_275steal17hf0025646c6b5d547E
+00004f40 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_285steal17h5db04a0cdb44828bE
+00004f46 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_295steal17hd44ca9f102bf8816E
+00004f4c l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_305steal17h93c208157009f890E
+00004f52 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P0_315steal17h9d26b4c40f13e471E
+00004f58 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P1_005steal17hb0afe7617a3aa8c3E
+00004f5e l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P1_015steal17hbdfd59635b94314aE
+00004f64 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P1_025steal17h82ea23603f5f4c8dE
+00004f6a l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P1_035steal17hc48c34d0009f1d1bE
+00004f70 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P1_045steal17hec672379b3142adeE
+00004f76 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P1_055steal17h0255bac34e0f74e9E
+00004f7c l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P1_065steal17h865454b83a37f467E
+00004f82 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P1_075steal17ha31300daa3e7d986E
+00004f88 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P1_085steal17hb577a99dd3ea0bb8E
+00004f8e l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P1_095steal17hb0c77be4e1980dadE
+00004f94 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P1_105steal17h64676bab30cd98ebE
+00004f9a l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P1_115steal17h5147319d103d60efE
+00004fa0 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P1_125steal17hd7a51f62ab65cc59E
+00004fa6 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P1_135steal17h81a4f8094a18250cE
+00004fac l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P1_145steal17h94fcf9367526ec78E
+00004fb2 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5P1_155steal17h3ef9171b42d218c5E
+00004fb8 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals4TEMP5steal17h0abe8b3a7f032464E
+00004fbe l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals4QDEC5steal17h9342bef69e599f30E
+00004fc4 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals3PDM5steal17h75ecf7bf4f9c774bE
+00004fca l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals3I2S5steal17h115b8015b8c4f66aE
+00004fd0 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals5RADIO5steal17h963fad0e510441abE
+00004fd6 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals4EGU05steal17hb3c1b80b8b72237fE
+00004fdc l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals4EGU15steal17hf1f8791d73db36a9E
+00004fe2 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals4EGU25steal17ha752e725579bac0bE
+00004fe8 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals4EGU35steal17h6eb1dfe27d5d1b3aE
+00004fee l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals4EGU45steal17h55f74b146a85faafE
+00004ff4 l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals4EGU55steal17h9d1bc55c3e2666e1E
+00004ffa l     F .text	00000006 .hidden _ZN11embassy_nrf4chip11peripherals4NFCT5steal17h8664b387f8047919E
+00000000 l    df *ABS*	00000000 embassy_nrf.7d708de31c1fefe9-cgu.2
+00005fb0 l     F .text	00000044 _ZN11embassy_nrf4chip11Peripherals12take_with_cs17hd69b02f29f121fd6E
+0000550c l     F .text	00000014 _ZN66_$LT$core..cell..BorrowRefMut$u20$as$u20$core..ops..drop..Drop$GT$4drop17h234c7ee3dabe02c9E
+0000534e l     F .text	0000001e _ZN4core3ptr8non_null16NonNull$LT$T$GT$13new_unchecked18precondition_check17h7f3379a344f546a4E
+0000cd10 l     O .rodata	000000d2 .Lanon.547fc51a2902d144e8eba21b120b98d9.2
+0000cde2 l     O .rodata	000000c7 .Lanon.547fc51a2902d144e8eba21b120b98d9.5
+0000cf54 l     O .rodata	00000008 .Lanon.547fc51a2902d144e8eba21b120b98d9.14
+0000cf5c l     O .rodata	00000010 .Lanon.547fc51a2902d144e8eba21b120b98d9.15
+0000549e l     F .text	00000016 _ZN4core4sync6atomic9AtomicU324load17hac04ba279cff7a80E
+000054b4 l     F .text	00000018 _ZN4core4sync6atomic9AtomicU325store17hf2a9edd2b7459dedE
+00005586 l     F .text	0000000e _ZN11embassy_nrf11time_driver3rtc17h6cae432e202c4cb3E
+00005594 l     F .text	0000003c _ZN11embassy_nrf11time_driver8calc_now17h69316a6e0d867fafE
+0000d098 l     O .rodata	00000010 .Lanon.547fc51a2902d144e8eba21b120b98d9.53
+000055d0 l     F .text	00000044 _ZN11embassy_nrf11time_driver9compare_n17hd4d2a513edd2265dE
+0000d0a8 l     O .rodata	00000010 .Lanon.547fc51a2902d144e8eba21b120b98d9.54
+0000d0b8 l     O .rodata	00000010 .Lanon.547fc51a2902d144e8eba21b120b98d9.55
+00005614 l     F .text	0000011c _ZN11embassy_nrf11time_driver9RtcDriver4init17hd8c88f7c14be4472E
+00005730 l     F .text	0000001e _ZN11embassy_nrf11time_driver9RtcDriver4init28_$u7b$$u7b$closure$u7d$$u7d$17hf5df9ed6925e5991E
+0000574e l     F .text	00000034 _ZN11embassy_nrf11time_driver9RtcDriver4init28_$u7b$$u7b$closure$u7d$$u7d$17hb3253f45cacc3a96E
+00005782 l     F .text	00000122 _ZN11embassy_nrf11time_driver9RtcDriver12on_interrupt17h8f43ec524bec9be6E
+000058b6 l     F .text	00000010 _ZN11embassy_nrf11time_driver9RtcDriver11next_period17h57e3a42461bc694fE
+000059e4 l     F .text	00000108 _ZN11embassy_nrf11time_driver9RtcDriver13trigger_alarm17hab5e0d13597c80fcE
+0000d0c8 l     O .rodata	00000010 .Lanon.547fc51a2902d144e8eba21b120b98d9.56
+0000d0d8 l     O .rodata	00000010 .Lanon.547fc51a2902d144e8eba21b120b98d9.57
+000059c8 l     F .text	0000001c _ZN11embassy_nrf11time_driver9RtcDriver11next_period28_$u7b$$u7b$closure$u7d$$u7d$28_$u7b$$u7b$closure$u7d$$u7d$17hba303b972ed50424E
+00005aec l     F .text	0000001c _ZN11embassy_nrf11time_driver9RtcDriver13trigger_alarm28_$u7b$$u7b$closure$u7d$$u7d$17hedacc254e3e7d208E
+0000d0e8 l     O .rodata	00000010 .Lanon.547fc51a2902d144e8eba21b120b98d9.58
+00005b08 l     F .text	00000276 _ZN11embassy_nrf11time_driver9RtcDriver9set_alarm17h7b0dae1d6878ea29E
+0000d0f8 l     O .rodata	00000010 .Lanon.547fc51a2902d144e8eba21b120b98d9.59
+00005d7e l     F .text	0000001c _ZN11embassy_nrf11time_driver9RtcDriver9set_alarm28_$u7b$$u7b$closure$u7d$$u7d$17h368c68a79e9c801dE
+0000cf6c l     O .rodata	0000001c .Lanon.547fc51a2902d144e8eba21b120b98d9.21
+0000cffc l     O .rodata	00000010 .Lanon.547fc51a2902d144e8eba21b120b98d9.26
+0000d00c l     O .rodata	00000010 .Lanon.547fc51a2902d144e8eba21b120b98d9.27
+0000d01c l     O .rodata	00000010 .Lanon.547fc51a2902d144e8eba21b120b98d9.28
+00005d9a l     F .text	00000022 _ZN11embassy_nrf11time_driver9RtcDriver9set_alarm28_$u7b$$u7b$closure$u7d$$u7d$17h596f1f5f6e77356eE
+0000d108 l     O .rodata	00000010 .Lanon.547fc51a2902d144e8eba21b120b98d9.60
+0000d118 l     O .rodata	00000010 .Lanon.547fc51a2902d144e8eba21b120b98d9.61
+00005dd8 l     F .text	0000001c _ZN11embassy_nrf11time_driver9RtcDriver9set_alarm28_$u7b$$u7b$closure$u7d$$u7d$17hfc785dcaf6a579beE
+00005dbc l     F .text	0000001c _ZN11embassy_nrf11time_driver9RtcDriver9set_alarm28_$u7b$$u7b$closure$u7d$$u7d$17he1f12dec6f403403E
+0000d128 l     O .rodata	00000010 .Lanon.547fc51a2902d144e8eba21b120b98d9.62
+0000d138 l     O .rodata	00000010 .Lanon.547fc51a2902d144e8eba21b120b98d9.63
+20000000 l     O .data	00000018 _ZN11embassy_nrf11time_driver6DRIVER17hf4e310d07e231df6E
+00005ff4 l     F .text	00000206 _ZN11embassy_nrf4chip11Peripherals5steal17hcfaff20028a4b3e4E
+00006204 l     F .text	00000012 _ZN11embassy_nrf11time_driver18__cortex_m_rt_RTC117h85a2d114508c7df3E
+00005400 l     F .text	0000000a .hidden _ZN4core4hint21unreachable_unchecked17hf59fb41359edf49fE
+00005fa6 l     F .text	0000000a .hidden _ZN11embassy_nrf4chip11Peripherals4take17hc6f61a243203b187E
+00005f0e l     F .text	0000001c .hidden _ZN11embassy_nrf11time_driver4init17hb4b4f9d91b178c68E
+00005e70 l     F .text	0000009e .hidden _ZN83_$LT$embassy_nrf..time_driver..RtcDriver$u20$as$u20$embassy_time_driver..Driver$GT$13schedule_wake28_$u7b$$u7b$closure$u7d$$u7d$17h20bdbf548a4d78a7E
+000058a4 l     F .text	00000012 .hidden _ZN11embassy_nrf11time_driver9RtcDriver12on_interrupt28_$u7b$$u7b$closure$u7d$$u7d$17h58bc7a3cb2448562E
+00005330 l     F .text	0000000e .hidden _ZN4core3ops8function6FnOnce9call_once17hf8875233ff2141deE
+000058c6 l     F .text	00000102 .hidden _ZN11embassy_nrf11time_driver9RtcDriver11next_period28_$u7b$$u7b$closure$u7d$$u7d$17h0e605c59246052a8E
+0000540a l     F .text	00000012 .hidden _ZN4core4hint21unreachable_unchecked18precondition_check17h3eb3a9e402d78d1aE
+00005438 l     F .text	00000066 .hidden _ZN4core4sync6atomic14compiler_fence17hf091fd9f1354186aE
+00000000 l    df *ABS*	00000000 embassy_nrf.7d708de31c1fefe9-cgu.3
+0000d1cc l     O .rodata	00000010 .Lanon.419a29a396f23f026111ee08d83afb37.1
+0000d250 l     O .rodata	00000010 .Lanon.419a29a396f23f026111ee08d83afb37.6
+0000d2d0 l     O .rodata	00000010 .Lanon.419a29a396f23f026111ee08d83afb37.26
+0000d2e0 l     O .rodata	00000010 .Lanon.419a29a396f23f026111ee08d83afb37.27
+0000d2f0 l     O .rodata	00000010 .Lanon.419a29a396f23f026111ee08d83afb37.28
+0000d300 l     O .rodata	00000010 .Lanon.419a29a396f23f026111ee08d83afb37.29
+0000d310 l     O .rodata	00000010 .Lanon.419a29a396f23f026111ee08d83afb37.30
+000062e8 l     F .text	0000000e .hidden _ZN4core4task4wake7Context5waker17h30a7fb56ee4286efE
+0000634e l     F .text	0000003c .hidden _ZN8cortex_m10peripheral3scb43_$LT$impl$u20$cortex_m..peripheral..SCB$GT$9sys_reset17h00ad1bbb43f809c7E
+00000000 l    df *ABS*	00000000 rand_core.e7f4f1403ee64fc9-cgu.0
+00000000 l    df *ABS*	00000000 bitflags.6e27ed77bb87f1be-cgu.0
+00000000 l    df *ABS*	00000000 nrf_pac.aaec592e665bb606-cgu.1
+00000000 l    df *ABS*	00000000 nrf_pac.aaec592e665bb606-cgu.3
+00000000 l    df *ABS*	00000000 nrf_pac.aaec592e665bb606-cgu.2
+00000000 l    df *ABS*	00000000 nrf_pac.aaec592e665bb606-cgu.4
+00000000 l    df *ABS*	00000000 nrf_pac.aaec592e665bb606-cgu.5
+00000000 l    df *ABS*	00000000 nrf_pac.aaec592e665bb606-cgu.6
+00000000 l    df *ABS*	00000000 nrf_pac.aaec592e665bb606-cgu.7
+00000000 l    df *ABS*	00000000 cortex_m_rt.13c5e548ffdd7c56-cgu.0
+00000000 l    df *ABS*	00000000 embassy_usb_driver.dcf34763e060d5ed-cgu.0
+00000000 l    df *ABS*	00000000 embassy_embedded_hal.42c5c3e24b27c568-cgu.0
+00000000 l    df *ABS*	00000000 embassy_time.5eb48c53fac86faa-cgu.0
+00006b7c l     F .text	00000012 _ZN72_$LT$embassy_time..instant..Instant$u20$as$u20$core..cmp..PartialOrd$GT$11partial_cmp17h83c5f53f7f175874E
+000065a0 l     F .text	00000040 _ZN4core3cmp5impls55_$LT$impl$u20$core..cmp..PartialOrd$u20$for$u20$u64$GT$11partial_cmp17h5084ec0c5c6390bbE
+000065e0 l     F .text	0000007c _ZN4core3num21_$LT$impl$u20$u64$GT$11checked_add17h6f939717df49c9a2E
+0000665c l     F .text	00000076 _ZN4core3num21_$LT$impl$u20$u64$GT$11checked_div17h2eba14dd85b76b45E
+000066d2 l     F .text	0000000e _ZN4core4task4wake7Context5waker17h41b82b6d034ca65eE
+00006a52 l     F .text	0000000e _ZN12embassy_time7instant7Instant11checked_add28_$u7b$$u7b$closure$u7d$$u7d$17h70a6db68c353256bE
+00006912 l     F .text	0000000e _ZN12embassy_time8duration8Duration11checked_div28_$u7b$$u7b$closure$u7d$$u7d$17h65edc6d4ac8b4a4bE
+0000d39c l     O .rodata	00000010 .Lanon.c344c014f1b7d73bf21906a12b1a17ea.8
+00006920 l     F .text	00000080 _ZN12embassy_time8duration8div_ceil17h314160ecf765c7adE
+0000d3ac l     O .rodata	00000010 .Lanon.c344c014f1b7d73bf21906a12b1a17ea.10
+0000d3bc l     O .rodata	00000010 .Lanon.c344c014f1b7d73bf21906a12b1a17ea.26
+0000d3cc l     O .rodata	00000010 .Lanon.c344c014f1b7d73bf21906a12b1a17ea.27
+0000d448 l     O .rodata	00000010 .Lanon.c344c014f1b7d73bf21906a12b1a17ea.34
+0000d480 l     O .rodata	00000010 .Lanon.c344c014f1b7d73bf21906a12b1a17ea.38
+0000d458 l     O .rodata	00000028 .Lanon.c344c014f1b7d73bf21906a12b1a17ea.37
+00000000 l    df *ABS*	00000000 fixed.df357938441fbbdf-cgu.4
+0000d4c4 l     O .rodata	00000008 .Lanon.069a74c44611907ed3313b3e40b33cf9.5
+0000d4f4 l     O .rodata	00000008 .Lanon.069a74c44611907ed3313b3e40b33cf9.7
+0000d574 l     O .rodata	00000010 .Lanon.069a74c44611907ed3313b3e40b33cf9.9
+0000d584 l     O .rodata	00000010 .Lanon.069a74c44611907ed3313b3e40b33cf9.10
+0000d5c8 l     O .rodata	00000008 .Lanon.069a74c44611907ed3313b3e40b33cf9.12
+0000d5fc l     O .rodata	00000008 .Lanon.069a74c44611907ed3313b3e40b33cf9.14
+0000d604 l     O .rodata	00000010 .Lanon.069a74c44611907ed3313b3e40b33cf9.15
+0000d614 l     O .rodata	00000010 .Lanon.069a74c44611907ed3313b3e40b33cf9.16
+00000000 l    df *ABS*	00000000 fixed.df357938441fbbdf-cgu.0
+00000000 l    df *ABS*	00000000 fixed.df357938441fbbdf-cgu.1
+00000000 l    df *ABS*	00000000 fixed.df357938441fbbdf-cgu.2
+00000000 l    df *ABS*	00000000 fixed.df357938441fbbdf-cgu.5
+00000000 l    df *ABS*	00000000 fixed.df357938441fbbdf-cgu.3
+00000000 l    df *ABS*	00000000 fixed.df357938441fbbdf-cgu.6
+00000000 l    df *ABS*	00000000 fixed.df357938441fbbdf-cgu.7
+00000000 l    df *ABS*	00000000 az.c9e7d60a55400654-cgu.1
+00000000 l    df *ABS*	00000000 az.c9e7d60a55400654-cgu.0
+00000000 l    df *ABS*	00000000 embassy_hal_internal.555ef6c9ca572938-cgu.0
+00000000 l    df *ABS*	00000000 num_traits.85ec08d2845b7f76-cgu.0
+00000000 l    df *ABS*	00000000 embassy_time_queue_utils.6b566530988e59e9-cgu.0
+00006ebc l     F .text	00000012 _ZN71_$LT$embassy_executor..raw..TaskRef$u20$as$u20$core..cmp..PartialEq$GT$2eq17ha152c31e6fbef106E
+00007048 l     F .text	0000007c _ZN24embassy_time_queue_utils16queue_integrated5Queue6retain17ha6e45a2bc9cee3faE
+00006fca l     F .text	0000007e _ZN24embassy_time_queue_utils16queue_integrated5Queue15next_expiration28_$u7b$$u7b$closure$u7d$$u7d$17h4940f51c0650d900E
+00000000 l    df *ABS*	00000000 embassy_time_driver.afe739dc77459e29-cgu.0
+00000000 l    df *ABS*	00000000 embassy_sync.4c0c9aaf8e15f558-cgu.0
+0000719a l     F .text	00000014 _ZN4core4task4wake5Waker11wake_by_ref17h91713e15eb8ca436E
+000071ae l     F .text	0000004a _ZN4core4task4wake5Waker9will_wake17h431270091df11298E
+000071f8 l     F .text	00000014 _ZN62_$LT$core..task..wake..Waker$u20$as$u20$core..clone..Clone$GT$5clone17h84df8f04e93435ecE
+00000000 l    df *ABS*	00000000 futures_core.f7e68c54264c265-cgu.0
+00007434 l     F .text	00000014 _ZN65_$LT$core..task..wake..Waker$u20$as$u20$core..ops..drop..Drop$GT$4drop17hf3926ca1fe210bc6E
+00000000 l    df *ABS*	00000000 embedded_io.74386b6efdb51073-cgu.0
+00000000 l    df *ABS*	00000000 heapless.318c53692d8ff8c8-cgu.0
+00000000 l    df *ABS*	00000000 hash32.c6b1cf024490010d-cgu.0
+00000000 l    df *ABS*	00000000 panic_probe.5c862c7136e80e2b-cgu.0
+0000745c l     F .text	0000001e _ZN4core4sync6atomic10AtomicBool4load17h57427c0315431ec1E
+0000747a l     F .text	0000001a _ZN4core4sync6atomic10AtomicBool5store17h213692616c73e228E
+0000d658 l     O .rodata	00000008 .Lanon.53b48ad2f557dc81341c8169805b9500.1
+0000d688 l     O .rodata	00000008 .Lanon.53b48ad2f557dc81341c8169805b9500.3
+0000d708 l     O .rodata	00000010 .Lanon.53b48ad2f557dc81341c8169805b9500.6
+0000d718 l     O .rodata	00000010 .Lanon.53b48ad2f557dc81341c8169805b9500.7
+0000d75c l     O .rodata	00000008 .Lanon.53b48ad2f557dc81341c8169805b9500.9
+0000d790 l     O .rodata	00000008 .Lanon.53b48ad2f557dc81341c8169805b9500.11
+0000d798 l     O .rodata	00000010 .Lanon.53b48ad2f557dc81341c8169805b9500.12
+0000d7a8 l     O .rodata	00000010 .Lanon.53b48ad2f557dc81341c8169805b9500.13
+0000d7b8 l     O .rodata	00000010 .Lanon.53b48ad2f557dc81341c8169805b9500.14
+00007678 l     F .text	00000008 _ZN8cortex_m3asm3udf17h4d4ff31e1f530bd0E
+00007680 l     F .text	0000000a _ZN8cortex_m9interrupt7disable17hdc09b2612b46ca78E
+20000215 l     O .bss	00000001 _ZN11panic_probe3imp5panic8PANICKED17h2eda74b172390a8dE
+00007702 l     F .text	00000036 _ZN11panic_probe11print_defmt5print17h31d7a57d972cd14cE
+00000000 l    df *ABS*	00000000 defmt_rtt.7bde1bf9cece01fd-cgu.0
+00007738 l     F .text	00000032 _ZN106_$LT$core..ops..range..Range$LT$usize$GT$$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$13get_unchecked18precondition_check17hfe133c8fb5383946E
+0000d7c8 l     O .rodata	000000d6 .Lanon.de043f8522eeaf755c64980e469d8f89.0
+000077b0 l     F .text	000001fe _ZN4core10intrinsics19copy_nonoverlapping18precondition_check17hb3313395cf925f8eE
+0000d8c8 l     O .rodata	00000008 .Lanon.de043f8522eeaf755c64980e469d8f89.2
+0000d948 l     O .rodata	00000010 .Lanon.de043f8522eeaf755c64980e469d8f89.5
+00007dd8 l     F .text	00000080 _ZN4core9ub_checks23maybe_is_nonoverlapping7runtime17h70c660d3b0aa9a4fE
+0000d958 l     O .rodata	0000011b .Lanon.de043f8522eeaf755c64980e469d8f89.6
+00007a0e l     F .text	0000001e _ZN4core4sync6atomic10AtomicBool4load17h6530ee351e7698c1E
+00007a2c l     F .text	0000001a _ZN4core4sync6atomic10AtomicBool5store17hc725cbc8f59520dbE
+00007a46 l     F .text	00000016 _ZN4core4sync6atomic11AtomicUsize4load17hfe561a44da5776a8E
+00007a5c l     F .text	00000018 _ZN4core4sync6atomic11AtomicUsize5store17h185ab23ce76d668aE
+0000daa4 l     O .rodata	00000008 .Lanon.de043f8522eeaf755c64980e469d8f89.8
+0000dad4 l     O .rodata	00000008 .Lanon.de043f8522eeaf755c64980e469d8f89.10
+0000db54 l     O .rodata	00000010 .Lanon.de043f8522eeaf755c64980e469d8f89.12
+0000db64 l     O .rodata	00000010 .Lanon.de043f8522eeaf755c64980e469d8f89.13
+0000dba8 l     O .rodata	00000008 .Lanon.de043f8522eeaf755c64980e469d8f89.15
+0000dbdc l     O .rodata	00000008 .Lanon.de043f8522eeaf755c64980e469d8f89.17
+0000dbe4 l     O .rodata	00000010 .Lanon.de043f8522eeaf755c64980e469d8f89.18
+0000dbf4 l     O .rodata	00000010 .Lanon.de043f8522eeaf755c64980e469d8f89.19
+0000dc04 l     O .rodata	0000003d .Lanon.de043f8522eeaf755c64980e469d8f89.20
+0000855c l     F .text	0000001e _ZN9defmt_rtt10RttEncoder7acquire28_$u7b$$u7b$closure$u7d$$u7d$17hbb90341c3a2d7637E
+0000dcac l     O .rodata	00000010 .Lanon.de043f8522eeaf755c64980e469d8f89.22
+0000dcbc l     O .rodata	00000010 .Lanon.de043f8522eeaf755c64980e469d8f89.23
+0000dccc l     O .rodata	00000010 .Lanon.de043f8522eeaf755c64980e469d8f89.24
+0000dcdc l     O .rodata	00000010 .Lanon.de043f8522eeaf755c64980e469d8f89.25
+00008594 l     F .text	0000001e _ZN9defmt_rtt10RttEncoder5write28_$u7b$$u7b$closure$u7d$$u7d$17h615a2c54f6a9a3d8E
+0000dcec l     O .rodata	00000010 .Lanon.de043f8522eeaf755c64980e469d8f89.26
+0000dcfc l     O .rodata	00000010 .Lanon.de043f8522eeaf755c64980e469d8f89.27
+00008624 l     F .text	0000001e _ZN9defmt_rtt10RttEncoder7release28_$u7b$$u7b$closure$u7d$$u7d$17he7b1974c82f8d4bcE
+0000816a l     F .text	00000072 _ZN9defmt_rtt7channel7Channel9write_all17h75dbe16629d76f8bE
+00008406 l     F .text	00000028 _ZN9defmt_rtt7channel7Channel17host_is_connected17h82d1da889a6eedf1E
+0000826c l     F .text	0000003e _ZN9defmt_rtt7channel7Channel17nonblocking_write17hcb7babfdc5d38901E
+000081dc l     F .text	00000090 _ZN9defmt_rtt7channel7Channel14blocking_write17hcb94bcd6b4ac97d8E
+0000dd74 l     O .rodata	00000010 .Lanon.de043f8522eeaf755c64980e469d8f89.29
+0000842e l     F .text	000000b0 _ZN9defmt_rtt7channel21available_buffer_size17h3ac446cc025a664dE
+000082aa l     F .text	0000015c _ZN9defmt_rtt7channel7Channel10write_impl17h3f5a0a9153c41b56E
+0000dd84 l     O .rodata	00000010 .Lanon.de043f8522eeaf755c64980e469d8f89.30
+0000dd94 l     O .rodata	00000010 .Lanon.de043f8522eeaf755c64980e469d8f89.31
+0000dda4 l     O .rodata	00000010 .Lanon.de043f8522eeaf755c64980e469d8f89.32
+0000ddb4 l     O .rodata	00000010 .Lanon.de043f8522eeaf755c64980e469d8f89.33
+0000ddc4 l     O .rodata	00000010 .Lanon.de043f8522eeaf755c64980e469d8f89.34
+0000ddd4 l     O .rodata	00000010 .Lanon.de043f8522eeaf755c64980e469d8f89.35
+000084de l     F .text	0000007e _ZN9defmt_rtt10RttEncoder7acquire17h44d23e3c0a880c76E
+0000de04 l     O .rodata	00000008 .Lanon.de043f8522eeaf755c64980e469d8f89.37
+0000de70 l     O .rodata	00000010 .Lanon.de043f8522eeaf755c64980e469d8f89.39
+0000857a l     F .text	0000001a _ZN9defmt_rtt10RttEncoder5write17h1a13053a5e9808c7E
+000085b2 l     F .text	00000072 _ZN9defmt_rtt10RttEncoder7release17h1b8570e4096eaea5E
+0000de9c l     O .rodata	00000008 .Lanon.de043f8522eeaf755c64980e469d8f89.41
+0000dea4 l     O .rodata	00000010 .Lanon.de043f8522eeaf755c64980e469d8f89.42
+20000216 l     O .bss	00000005 _ZN9defmt_rtt11RTT_ENCODER17h239642922f2696c5E
+00000000 l    df *ABS*	00000000 embassy_futures.28db44848a84ebc5-cgu.0
+00000000 l    df *ABS*	00000000 embassy_executor.75c401911be264b3-cgu.0
+000086f6 l     F .text	0000001e _ZN4core3ptr8non_null16NonNull$LT$T$GT$13new_unchecked18precondition_check17hbb2a3c8abb9111d9E
+0000deb4 l     O .rodata	000000d2 .Lanon.991788cae5f6c04ec8ef682fcc9a57c2.2
+00008746 l     F .text	00000012 _ZN4core4hint21unreachable_unchecked18precondition_check17hf6437e23eaa38e7aE
+0000df86 l     O .rodata	000000c7 .Lanon.991788cae5f6c04ec8ef682fcc9a57c2.3
+00008758 l     F .text	000001a0 _ZN4core4sync6atomic10AtomicBool4swap17h23bc1585152eec94E
+000088f8 l     F .text	0000001a _ZN4core4sync6atomic10AtomicBool5store17h6e5938d8ab2b30dbE
+0000e080 l     O .rodata	00000008 .Lanon.991788cae5f6c04ec8ef682fcc9a57c2.5
+0000e0b0 l     O .rodata	00000008 .Lanon.991788cae5f6c04ec8ef682fcc9a57c2.7
+0000e130 l     O .rodata	00000010 .Lanon.991788cae5f6c04ec8ef682fcc9a57c2.9
+0000e140 l     O .rodata	00000010 .Lanon.991788cae5f6c04ec8ef682fcc9a57c2.10
+0000e184 l     O .rodata	00000008 .Lanon.991788cae5f6c04ec8ef682fcc9a57c2.12
+0000e1b8 l     O .rodata	00000008 .Lanon.991788cae5f6c04ec8ef682fcc9a57c2.14
+0000e1c0 l     O .rodata	00000010 .Lanon.991788cae5f6c04ec8ef682fcc9a57c2.15
+0000e1d0 l     O .rodata	00000010 .Lanon.991788cae5f6c04ec8ef682fcc9a57c2.16
+00008c30 l     F .text	00000066 _ZN4core4sync6atomic14compiler_fence17h6f2a5c417daf54bbE
+0000e214 l     O .rodata	00000008 .Lanon.991788cae5f6c04ec8ef682fcc9a57c2.18
+0000e21c l     O .rodata	00000010 .Lanon.991788cae5f6c04ec8ef682fcc9a57c2.19
+000094ea l     F .text	00000058 _ZN16embassy_executor3raw9run_queue8RunQueue7enqueue28_$u7b$$u7b$closure$u7d$$u7d$17h18cf72d8a5a4f2b1E
+0000e260 l     O .rodata	00000008 .Lanon.991788cae5f6c04ec8ef682fcc9a57c2.21
+0000e2a8 l     O .rodata	00000008 .Lanon.991788cae5f6c04ec8ef682fcc9a57c2.23
+0000e2b0 l     O .rodata	00000010 .Lanon.991788cae5f6c04ec8ef682fcc9a57c2.24
+0000e2c0 l     O .rodata	00000010 .Lanon.991788cae5f6c04ec8ef682fcc9a57c2.25
+00009338 l     F .text	0000000e _ZN4core4task4wake5Waker4data17hf1388a8c4e3687d3E
+00009346 l     F .text	0000000e _ZN4core4task4wake5Waker6vtable17he794e2b910751fe7E
+00009354 l     F .text	0000000e _ZN4core4task4wake5Waker8from_raw17h1a0c16eb477569e1E
+00009362 l     F .text	00000014 _ZN4core4task4wake8RawWaker3new17hdc549fe110245ae2E
+000095d0 l     F .text	00000012 _ZN16embassy_executor3raw9run_queue8RunQueue11dequeue_all28_$u7b$$u7b$closure$u7d$$u7d$17h7f1034c45322a162E
+00009542 l     F .text	00000012 _ZN16embassy_executor3raw9run_queue8RunQueue7enqueue28_$u7b$$u7b$closure$u7d$$u7d$28_$u7b$$u7b$closure$u7d$$u7d$17h33ccea26c4822fc6E
+000094ce l     F .text	0000001c _ZN16embassy_executor3raw9run_queue8RunQueue3new17h640c60947bf54114E
+000096e0 l     F .text	00000010 _ZN16embassy_executor3raw7TaskRef8from_ptr17he7e62cf205c9325bE
+00009554 l     F .text	0000007c _ZN16embassy_executor3raw9run_queue8RunQueue11dequeue_all17h13ad6b04b80f1405E
+00009634 l     F .text	00000010 _ZN16embassy_executor3raw4util23SyncUnsafeCell$LT$T$GT$3get17he1def9ecccc0596aE
+0000980c l     F .text	00000032 _ZN16embassy_executor3raw12SyncExecutor4poll28_$u7b$$u7b$closure$u7d$$u7d$17hf6b41a7c911f0e0bE
+000095e2 l     F .text	00000012 _ZN16embassy_executor3raw5state6locked17h3168074fc605358fE
+000097a0 l     F .text	0000005c _ZN16embassy_executor3raw12SyncExecutor5spawn28_$u7b$$u7b$closure$u7d$$u7d$17h3fa3be20c3ec9ee5E
+000095f4 l     F .text	00000012 _ZN16embassy_executor3raw5state6locked17hff93f10e0f260cb6E
+000098f2 l     F .text	00000082 _ZN16embassy_executor3raw9wake_task28_$u7b$$u7b$closure$u7d$$u7d$17hb86b8469d7f90ed9E
+00009624 l     F .text	00000010 _ZN16embassy_executor3raw4util23SyncUnsafeCell$LT$T$GT$3get17h479d6e9d4e32169dE
+00009644 l     F .text	00000018 _ZN16embassy_executor3raw5waker5clone17hc3c5b7225760eecbE
+0000e2d0 l     O .rodata	00000010 _ZN16embassy_executor3raw5waker6VTABLE17hb788ebea98a99fc8E
+0000965c l     F .text	00000014 _ZN16embassy_executor3raw5waker4wake17hfe5c171341270fadE
+00009670 l     F .text	0000000c _ZN16embassy_executor3raw5waker4drop17h5d1f402ef190d1c7E
+00009738 l     F .text	00000010 _ZN16embassy_executor3raw6Pender4pend17h1a40b965e4cfde3fE
+00009748 l     F .text	00000026 _ZN16embassy_executor3raw12SyncExecutor3new17he9cd83bbdee3c62fE
+000097fc l     F .text	00000010 _ZN16embassy_executor3raw12SyncExecutor4poll17h1648c9abe771619cE
+0000e350 l     O .rodata	00000010 .Lanon.991788cae5f6c04ec8ef682fcc9a57c2.28
+0000e360 l     O .rodata	00000010 .Lanon.991788cae5f6c04ec8ef682fcc9a57c2.29
+00000000 l    df *ABS*	00000000 defmt.ea201715e0a03359-cgu.0
+00009aa2 l     F .text	0000011c _ZN4core4char7methods15encode_utf8_raw17h13e346d1e6ae50ceE
+00009a56 l     F .text	00000016 _ZN4core3num21_$LT$impl$u20$u16$GT$11to_le_bytes17h777a07ff0b507e2bE
+00009a6c l     F .text	00000010 _ZN4core3num21_$LT$impl$u20$u32$GT$11to_le_bytes17h92e3e95e8454dab3E
+00009a7c l     F .text	00000012 _ZN4core3num21_$LT$impl$u20$u64$GT$11to_le_bytes17hf9dc4b5b09d7c1e6E
+00009a8e l     F .text	00000014 _ZN4core3str21_$LT$impl$u20$str$GT$3len17h693a289ffc06f9ceE
+0000e3e8 l     O .rodata	00000010 .Lanon.12cc1d9fe6f1b1b4c9d72ed1b08691ce.2
+00009bbe l     F .text	00000104 _ZN4core5slice3raw18from_raw_parts_mut18precondition_check17h328448cdcbdc952fE
+0000e424 l     O .rodata	00000008 .Lanon.12cc1d9fe6f1b1b4c9d72ed1b08691ce.4
+0000e644 l     O .rodata	00000010 .Lanon.12cc1d9fe6f1b1b4c9d72ed1b08691ce.9
+0000e4a0 l     O .rodata	00000010 .Lanon.12cc1d9fe6f1b1b4c9d72ed1b08691ce.6
+0000e4b0 l     O .rodata	0000011b .Lanon.12cc1d9fe6f1b1b4c9d72ed1b08691ce.7
+0000e654 l     O .rodata	00000018 .Lanon.12cc1d9fe6f1b1b4c9d72ed1b08691ce.10
+0000e66c l     O .rodata	00000001 .Lanon.12cc1d9fe6f1b1b4c9d72ed1b08691ce.15
+0000e6cc l     O .rodata	00000010 .Lanon.12cc1d9fe6f1b1b4c9d72ed1b08691ce.18
+00009f54 l     F .text	00000008 _ZN5defmt13default_panic19panic_cold_explicit17h1cddfb4b4bc7e40bE
+00000000 l    df *ABS*	00000000 cortex_m.2b7b928efbaec2a5-cgu.0
+00009f5c l     F .text	00000024 _ZN49_$LT$usize$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17h2c68ca476a49ed19E
+00009f80 l     F .text	0000002a _ZN4core3num23_$LT$impl$u20$usize$GT$13unchecked_add18precondition_check17h04c6e41abfd69131E
+0000e6dc l     O .rodata	000000ba .Lanon.36182ab82863f906170aba3dd0ad5a05.1
+00009fce l     F .text	000000ba _ZN4core3ptr13read_volatile18precondition_check17hb1b8364a0c4ca357E
+0000e7c0 l     O .rodata	00000008 .Lanon.36182ab82863f906170aba3dd0ad5a05.3
+0000e924 l     O .rodata	00000010 .Lanon.36182ab82863f906170aba3dd0ad5a05.7
+0000e7c8 l     O .rodata	000000e3 .Lanon.36182ab82863f906170aba3dd0ad5a05.4
+0000a0d8 l     F .text	000000bc _ZN4core3ptr14write_volatile18precondition_check17ha4bad227d179c88aE
+0000e934 l     O .rodata	000000e4 .Lanon.36182ab82863f906170aba3dd0ad5a05.8
+0000a262 l     F .text	0000002e _ZN8cortex_m8register7primask4read17h5200c3282b26550fE
+0000a246 l     F .text	0000001c _ZN8cortex_m8register7primask7Primask9is_active17hcade5a3996d497aaE
+0000a232 l     F .text	0000000a _ZN8cortex_m9interrupt7disable17h80927f083ce1baf2E
+0000a23c l     F .text	0000000a _ZN8cortex_m9interrupt6enable17h60c93a269a7d7d69E
+0000a2ac l     F .text	0000001e _ZN77_$LT$cortex_m..register..primask..Primask$u20$as$u20$core..cmp..PartialEq$GT$2eq17h96b76190c526e1d8E
+00000000 l    df *ABS*	00000000 lib.f2c86790-cgu.0
+00000000 l    df *ABS*	00000000 embedded_hal.4ac3db621ffb09c0-cgu.0
+00000000 l    df *ABS*	00000000 core.16116cc67b9075fe-cgu.0
+0000ea34 l     O .rodata	00000008 .Lanon.2642cffa3caea40eecf91712b6f521b7.124
+0000ea60 l     O .rodata	00000008 .Lanon.2642cffa3caea40eecf91712b6f521b7.126
+0000ea8c l     O .rodata	00000008 .Lanon.2642cffa3caea40eecf91712b6f521b7.128
+0000eab8 l     O .rodata	00000008 .Lanon.2642cffa3caea40eecf91712b6f521b7.136
+0000eae4 l     O .rodata	00000008 .Lanon.2642cffa3caea40eecf91712b6f521b7.138
+0000b31a l     F .text	000000ec _ZN4core3fmt3num3imp21_$LT$impl$u20$u32$GT$4_fmt17h25a8219fe9562f10E
+0000ebdc l     O .rodata	00000002 .Lanon.2642cffa3caea40eecf91712b6f521b7.294
+0000eaec l     O .rodata	0000000e .Lanon.2642cffa3caea40eecf91712b6f521b7.159
+0000eb0c l     O .rodata	00000008 .Lanon.2642cffa3caea40eecf91712b6f521b7.162
+0000b416 l     F .text	00000014 _ZN44_$LT$$RF$T$u20$as$u20$core..fmt..Display$GT$3fmt17h80a585b34ae46b8aE
+0000eb50 l     O .rodata	0000000c .Lanon.2642cffa3caea40eecf91712b6f521b7.223
+0000eb38 l     O .rodata	00000018 .Lanon.2642cffa3caea40eecf91712b6f521b7.222
+0000eb5c l     O .rodata	00000002 .Lanon.2642cffa3caea40eecf91712b6f521b7.224
+0000eb7c l     O .rodata	00000010 .Lanon.2642cffa3caea40eecf91712b6f521b7.226
+0000eb9c l     O .rodata	00000008 .Lanon.2642cffa3caea40eecf91712b6f521b7.229
+0000b406 l     F .text	00000010 _ZN42_$LT$$RF$T$u20$as$u20$core..fmt..Debug$GT$3fmt17hd4926f264aaed311E
+0000ebcc l     O .rodata	00000010 .Lanon.2642cffa3caea40eecf91712b6f521b7.256
+0000ebc8 l     O .rodata	00000002 .Lanon.2642cffa3caea40eecf91712b6f521b7.255
+0000ebde l     O .rodata	000000c8 .Lanon.2642cffa3caea40eecf91712b6f521b7.296
+0000a96c l     F .text	00000046 _ZN4core3fmt9Formatter12pad_integral12write_prefix17hbee2c2faf78a9d07E
+0000ece0 l     O .rodata	00000018 .Lanon.2642cffa3caea40eecf91712b6f521b7.436
+0000ed14 l     O .rodata	00000008 .Lanon.2642cffa3caea40eecf91712b6f521b7.440
+0000ed58 l     O .rodata	00000008 .Lanon.2642cffa3caea40eecf91712b6f521b7.442
+0000ed84 l     O .rodata	00000008 .Lanon.2642cffa3caea40eecf91712b6f521b7.446
+0000edc0 l     O .rodata	00000010 .Lanon.2642cffa3caea40eecf91712b6f521b7.475
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.153
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.162
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.172
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.184
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.016
+0000b468 l     F .text	000001c6 .hidden _ZN17compiler_builtins3mem6memcpy17h20ba2a1ad1eb6634E
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.190
+0000b62e l     F .text	0000000c .hidden __aeabi_memcpy
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.191
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.006
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.018
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.199
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.204
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.212
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.272
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.281
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.003
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.316
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.334
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.344
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.356
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.357
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.373
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.379
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.384
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.000
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.394
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.402
+0000b63a l     F .text	00000096 .hidden __aeabi_memcpy8
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.419
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.437
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.416
+0000b6e4 l     F .text	00000030 .hidden __udivmoddi4
+00000000 l    df *ABS*	00000000 compiler_builtins.e44c4944ef05e790-cgu.010
+0000b714 l     F .text	00000360 .hidden _ZN17compiler_builtins3int19specialized_div_rem11u64_div_rem17h70363b08925eab74E
+00000004 g     O .vector_table	00000004 __RESET_VECTOR
+00000100 g     F .text	0000003e Reset
+00000008 g     O .vector_table	00000038 __EXCEPTIONS
+00006512 g     F .text	00000000 DefaultHandler
+00000040 g     O .vector_table	000000c0 __INTERRUPTS
+00008684 g     F .text	0000000a _defmt_acquire
+0000868e g     F .text	0000000a _defmt_release
+00009f16 g     F .text	0000000a __defmt_default_timestamp
+0000000c g     O .defmt	00000004 __DEFMT_MARKER_TIMESTAMP_WAS_DEFINED
+00001f80 g     F .text	00000008 main
+00000003 g     O .defmt	00000001 {"package":"microbit-async-display-example","tag":"defmt_info","data":"Application started, press buttons!","disambiguator":"13900786795932843783","crate_name":"microbit_async_display_example"}
+00000004 g     O .defmt	00000001 {"package":"microbit-async-display-example","tag":"defmt_info","data":"{} pressed","disambiguator":"8509345465340642579","crate_name":"microbit_async_display_example"}
+00009474 g     F .text	0000002c __pender
+00000011 g     O .defmt	00000001 {"package":"embassy-executor","tag":"defmt_derived","data":"Busy","disambiguator":"15755438505458176783","crate_name":"embassy_executor"}
+00000008 g     O .defmt	00000001 {"package":"embassy-executor","tag":"defmt_error","data":"panicked at 'Found waker not created by the Embassy executor. `embassy_time::Timer` only works with the Embassy executor.'","disambiguator":"7201988413531162864","crate_name":"embassy_executor"}
+0000000a g     O .defmt	00000001 {"package":"embassy-executor","tag":"defmt_error","data":"panicked at 'embassy-executor: task arena is full. You must increase the arena size, see the documentation for details: https://docs.embassy.dev/embassy-executor/'","disambiguator":"12769001351148165237","crate_name":"embassy_executor"}
+00000009 g     O .defmt	00000001 {"package":"embassy-executor","tag":"defmt_error","data":"panicked at 'unwrap failed: self.spawn(token)'\nerror: `{:?}`","disambiguator":"10245228366164241577","crate_name":"embassy_executor"}
+0000a290 g     F .text	0000000a _critical_section_1_0_acquire
+0000a29a g     F .text	00000012 _critical_section_1_0_release
+00009f20 g     F .text	00000010 __defmt_default_panic
+00000013 g     O .defmt	00000001 _defmt_encoding_ = rzcobs
+00000012 g     O .defmt	00000001 _defmt_version_ = 4
+00000001 g     O .defmt	00000001 {"package":"defmt","tag":"defmt_prim","data":"{=__internal_Display}","disambiguator":"14158116662542268607","crate_name":"defmt"}
+00000002 g     O .defmt	00000001 {"package":"defmt","tag":"defmt_prim","data":"{=str}","disambiguator":"3063195899925645111","crate_name":"defmt"}
+20000020 g     O .data	00000030 _SEGGER_RTT
+00008698 g     F .text	00000012 _defmt_write
+00000007 g     O .defmt	00000001 {"package":"panic-probe","tag":"defmt_error","data":"{}","disambiguator":"3281125884690968605","crate_name":"panic_probe"}
+00004770 g     F .text	0000000a GPIOTE
+000061fa g     F .text	0000000a RTC1
+20000214 g     O .bss	00000001 _EMBASSY_DEVICE_PERIPHERALS
+00005f6c g     F .text	00000012 _embassy_time_now
+00005f7e g     F .text	00000028 _embassy_time_schedule_wake
+00000006 g     O .defmt	00000001 {"package":"embassy-nrf","tag":"defmt_error","data":"panicked at 'init called more than once!'","disambiguator":"7216352146720473471","crate_name":"embassy_nrf"}
+00000005 g     O .defmt	00000001 {"package":"embassy-nrf","tag":"defmt_warn","data":"You have requested enabling chip reset functionality on the reset pin, by not enabling the Cargo feature `reset-pin-as-gpio`.\nHowever, UICR is already programmed to some other setting, and can't be changed without erasing it.\nTo fix this, erase UICR manually, for example using `probe-rs erase` or `nrfjprog --eraseuicr`.","disambiguator":"2652817362596959516","crate_name":"embassy_nrf"}
+00006b8e g     F .text	00000024 _defmt_timestamp
+00000010 g     O .defmt	00000001 {"package":"embassy-time","tag":"defmt_timestamp","data":"{=u64:us}","disambiguator":"909995720420440434","crate_name":"embassy_time"}
+00006512 g     F .text	00000008 DefaultHandler_
+0000651a g     F .text	00000006 DefaultPreInit
+0000ba74 g     F .text	00000008 HardFault_
+0000768a g     F .text	0000004c _RNvCscSpY9Juk0HT_7___rustc17rust_begin_unwind
+0000b150 g     F .text	00000026 _ZN4core9panicking11panic_const24panic_const_sub_overflow17ha4c339b91653944eE
+0000b1c2 g     F .text	00000026 _ZN4core9panicking11panic_const24panic_const_shl_overflow17h947041eb91815fb2E
+0000a1a4 g     F .text	0000000e _ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h0afde0faa91357dbE
+0000a194 g     F .text	00000010 _ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17hd1eed7027fe23b7aE
+0000a4f8 g     F .text	0000003c _ZN4core9panicking18panic_bounds_check17hbfa4b59d350ae7c0E
+0000a46a g     F .text	00000026 _ZN4core9panicking5panic17h5284cc5a37f28ed9E
+00006dc4 g     F .text	00000012 _ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$8iter_mut17h46b3d0894c23207cE
+00006d6c g     F .text	00000058 _ZN94_$LT$core..slice..iter..IterMut$LT$T$GT$$u20$as$u20$core..iter..traits..iterator..Iterator$GT$4next17hbd1eb53e27a36510E
+0000b19c g     F .text	00000026 _ZN4core9panicking11panic_const24panic_const_shr_overflow17h3b7efafe8b312b78E
+0000987e g     F .text	00000010 _ZN16embassy_executor3raw8Executor7spawner17hb7e0d8e9e2724e86E
+0000986e g     F .text	00000010 _ZN16embassy_executor3raw8Executor4poll17h19375dbfb09ee3a6E
+0000971e g     F .text	0000000e _ZN16embassy_executor3raw7TaskRef6as_ptr17h4e14071552633612E
+0000967c g     F .text	00000020 _ZN16embassy_executor3raw5waker9from_task17hf8dbfc94448a63d2E
+0000972c g     F .text	0000000c _ZN16embassy_executor3raw11poll_exited17hfd5b40237e42c657E
+00009606 g     F .text	0000000c _ZN16embassy_executor3raw5state5State6as_u3217h2de4fd4b41425cedE
+2000021c g     O .bss	00008004 _ZN16embassy_executor7_export5ARENA17h7a91c5a9199e9a13E
+00006dd6 g     F .text	00000012 _ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$7is_null17hfec3e1d4a4a9bd7eE
+0000b12a g     F .text	00000026 _ZN4core9panicking11panic_const24panic_const_add_overflow17he3ca46f2f2ec3678E
+00009de2 g     F .text	0000000e _ZN5defmt6export9make_istr17h5fd4c9793e25184eE
+00009ec0 g     F .text	00000024 _ZN5defmt6export26acquire_header_and_release17h7ce8ef2ffd00dd1bE
+00009f20 g     F .text	00000000 _defmt_panic
+000038ca g     F .text	00000010 _ZN78_$LT$embassy_nrf..gpio..Output$u20$as$u20$embedded_hal..digital..OutputPin$GT$8set_high17hb140d5bce220f12aE
+000038da g     F .text	00000010 _ZN78_$LT$embassy_nrf..gpio..Output$u20$as$u20$embedded_hal..digital..OutputPin$GT$7set_low17h0a9fb674b5f9e687E
+0000b176 g     F .text	00000026 _ZN4core9panicking11panic_const24panic_const_mul_overflow17h506b9e9ec8555105E
+0000b6d0  w    F .text	00000014 __aeabi_uldivmod
+0000687e g     F .text	00000056 _ZN12embassy_time8duration8Duration11from_micros17hfa619c00dc798ed6E
+000067f8 g     F .text	0000003a _ZN12embassy_time5delay9block_for17hffec92adb099cf68E
+0000b1e8 g     F .text	00000026 _ZN4core9panicking11panic_const23panic_const_div_by_zero17hff1aa7944d63a61dE
+000069a0 g     F .text	0000000a _ZN12embassy_time7instant7Instant3now17hfcd4d5f32b6e690aE
+00006a60 g     F .text	00000048 _ZN112_$LT$embassy_time..instant..Instant$u20$as$u20$core..ops..arith..Add$LT$embassy_time..duration..Duration$GT$$GT$3add17h1e8ed146d555fbf8E
+00006564 g     F .text	0000003c _ZN4core3cmp10PartialOrd2lt17h4bbb5a114439107eE
+0000b234 g     F .text	00000026 _ZN4core9panicking11panic_const28panic_const_async_fn_resumed17hf08d9c560f63ded1E
+00006af8 g     F .text	00000084 _ZN75_$LT$embassy_time..timer..Timer$u20$as$u20$core..future..future..Future$GT$4poll17h72b7d707e049386aE
+00006acc g     F .text	0000002c _ZN12embassy_time5timer5Timer5after17h90fc56a887000710E
+00006832 g     F .text	0000004c _ZN12embassy_time8duration8Duration9from_secs17h0d65bcb0ec475bedE
+0000a534 g     F .text	0000004a _ZN4core6result13unwrap_failed17h5f8fbd930397df6cE
+000068d4 g     F .text	0000003e _ZN12embassy_time8duration8Duration11checked_div17h687a26f6402f5c7eE
+00006520 g     F .text	00000044 _ZN4core3cmp10PartialOrd2le17hd86e12ae1182a6c9E
+00006aa8 g     F .text	00000024 _ZN118_$LT$embassy_time..instant..Instant$u20$as$u20$core..ops..arith..AddAssign$LT$embassy_time..duration..Duration$GT$$GT$10add_assign17hb58207f28b59a87eE
+0000ab8e g     F .text	00000010 _ZN4core3fmt9Formatter9write_str17hf2abd6d7d3a79bb2E
+0000a42c g     F .text	00000016 _ZN4core9panicking9panic_fmt17h24455ea0bcd5a24aE
+00005f2a g     F .text	00000042 _ZN70_$LT$embassy_nrf..config..Config$u20$as$u20$core..default..Default$GT$7default17hf5f331165a1fac15E
+000041ac g     F .text	0000047c _ZN11embassy_nrf4init17hc121c2a202dc6d4dE
+00004ce0 g     F .text	00000010 _ZN11embassy_nrf4gpio3Pin7degrade17hb30ccf8511e366e5E
+00004c90 g     F .text	00000010 _ZN11embassy_nrf4gpio3Pin7degrade17h3ad8195b8553f21dE
+00004c50 g     F .text	00000010 _ZN11embassy_nrf4gpio3Pin7degrade17h046f9cf7caa18818E
+00004c80 g     F .text	00000010 _ZN11embassy_nrf4gpio3Pin7degrade17h38f6c5df68e9b4b2E
+00004ca0 g     F .text	00000010 _ZN11embassy_nrf4gpio3Pin7degrade17h42afd42e9c0dc241E
+00004cf0 g     F .text	00000010 _ZN11embassy_nrf4gpio3Pin7degrade17hd389a42720d795eeE
+00004c60 g     F .text	00000010 _ZN11embassy_nrf4gpio3Pin7degrade17h263a5ced7163a376E
+00004cd0 g     F .text	00000010 _ZN11embassy_nrf4gpio3Pin7degrade17ha383c0f0d170054eE
+00004cc0 g     F .text	00000010 _ZN11embassy_nrf4gpio3Pin7degrade17h79bd1e0fe83ad1bcE
+00004c70 g     F .text	00000010 _ZN11embassy_nrf4gpio3Pin7degrade17h28ebe9bae66a1dd3E
+00004cb0 g     F .text	00000010 _ZN11embassy_nrf4gpio3Pin7degrade17h47017b31f21f41a4E
+00004c40 g     F .text	00000010 _ZN11embassy_nrf4gpio3Pin7degrade17h01c132438600ad08E
+00009980 g     F .text	00000012 _ZN79_$LT$embassy_executor..spawner..SpawnError$u20$as$u20$defmt..traits..Format$GT$11_format_tag17hb60d30816bd64b53E
+00009e24 g     F .text	0000002c _ZN5defmt6export4istr17h6a3148ca5bdcd2a2E
+00009992 g     F .text	0000000c _ZN79_$LT$embassy_executor..spawner..SpawnError$u20$as$u20$defmt..traits..Format$GT$12_format_data17ha405255581f7b4d4E
+00003f7e g     F .text	00000018 _ZN11embassy_nrf6gpiote42_$LT$impl$u20$embassy_nrf..gpio..Input$GT$12wait_for_low17hbef67e97154e93c2E
+000094ae g     F .text	00000020 _ZN16embassy_executor4arch6thread8Executor3new17h270c35b6a8c0be72E
+00009df6 g     F .text	0000002e _ZN5defmt6export3str17h36a62e65d7ae988eE
+0000b07e g     F .text	00000024 _ZN4core5alloc6layout6Layout19is_size_align_valid17ha9abfdd8dbd267f5E
+0000a490 g     F .text	0000002c _ZN4core9panicking14panic_nounwind17h5e77e7d8ad1838b7E
+00009ea0 g     F .text	00000020 _ZN5defmt6export18acquire_and_header17h16cffd26e27c4a0bE
+00006216 g     F .text	0000000c _ZN100_$LT$embassy_hal_internal..peripheral..PeripheralRef$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17ha7d8806d5c570d52E
+00003664 g     F .text	00000084 _ZN11embassy_nrf4gpio9SealedPin4conf17hac50075134d28c97E
+000049f8 g     F .text	00000026 _ZN4core3ptr14write_volatile17h3d974517da8aa8e4E
+000037d2 g     F .text	0000004c _ZN11embassy_nrf4gpio9SealedPin7set_low17h501ef9dd8766358fE
+000036e8 g     F .text	0000004c _ZN11embassy_nrf4gpio9SealedPin8set_high17hb709c3117f361c5eE
+00003600 g     F .text	00000010 _ZN65_$LT$embassy_nrf..gpio..Flex$u20$as$u20$core..ops..drop..Drop$GT$4drop17h24d312eb7c1f2aacE
+00003e58 g     F .text	00000040 _ZN78_$LT$embassy_nrf..gpiote..PortInputFuture$u20$as$u20$core..ops..drop..Drop$GT$4drop17h678e283db9915948E
+000048ce g     F .text	00000024 _ZN4core3ptr13read_volatile17hd522fb4e1ffa191fE
+00003eca g     F .text	000000b4 _ZN85_$LT$embassy_nrf..gpiote..PortInputFuture$u20$as$u20$core..future..future..Future$GT$4poll17h8fbbf83609b7505aE
+00003f96 g     F .text	00000018 _ZN11embassy_nrf6gpiote41_$LT$impl$u20$embassy_nrf..gpio..Flex$GT$12wait_for_low17hda7114f5a0e980eaE
+0000b20e g     F .text	00000026 _ZN4core9panicking11panic_const23panic_const_rem_by_zero17h94d69846dc90841aE
+0000985c g     F .text	00000012 _ZN16embassy_executor3raw8Executor5spawn17h8099ca7172178bb6E
+0000713c g     F .text	00000018 _ZN4core3ptr50drop_in_place$LT$critical_section..with..Guard$GT$17h82a7466148a2f4a1E
+00003532 g     F .text	00000040 _ZN11embassy_nrf4gpio12convert_pull17hab0fd26784caef35E
+000034ac g     F .text	00000086 _ZN11embassy_nrf4gpio13convert_drive17h3eb434d07b49dcd4E
+00007560 g     F .text	000000cc _ZN4core4sync6atomic12atomic_store17h2047fd04c7112c94E
+0000343e g     F .text	00000010 _ZN12embassy_sync14blocking_mutex75Mutex$LT$embassy_sync..blocking_mutex..raw..CriticalSectionRawMutex$C$T$GT$6borrow17h1e5f41b1877ff8d1E
+0000344e g     F .text	00000010 _ZN12embassy_sync14blocking_mutex75Mutex$LT$embassy_sync..blocking_mutex..raw..CriticalSectionRawMutex$C$T$GT$6borrow17h7d19149fad415fa7E
+0000345e g     F .text	0000000e _ZN57_$LT$$RF$mut$u20$T$u20$as$u20$core..ops..deref..Deref$GT$5deref17h7a759c789a315bdbE
+0000346c g     F .text	0000000c _ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h5dcfb84cb40c63f0E
+00003478 g     F .text	00000014 _ZN69_$LT$core..pin..Pin$LT$Ptr$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hbfffb8d36e7273b9E
+000035aa g     F .text	0000002e _ZN11embassy_nrf4gpio4Flex19set_as_disconnected28_$u7b$$u7b$closure$u7d$$u7d$17hbdd07436a3650c52E
+00003624 g     F .text	00000040 _ZN11embassy_nrf4gpio9SealedPin5block17h8fbf887b0e8ca04fE
+00003610 g     F .text	00000014 _ZN11embassy_nrf4gpio9SealedPin4_pin17h86f18ac308589defE
+00003734 g     F .text	0000009e _ZN11embassy_nrf4gpio9SealedPin8set_high28_$u7b$$u7b$closure$u7d$$u7d$17h8303a562360cbe0bE
+00004a44 g     F .text	00000026 _ZN4core3ptr14write_volatile17h43eb50fae70d6160E
+0000381e g     F .text	0000009e _ZN11embassy_nrf4gpio9SealedPin7set_low28_$u7b$$u7b$closure$u7d$$u7d$17h17a3364455462179E
+00004ab6 g     F .text	00000026 _ZN4core3ptr14write_volatile17hb9b5ca8782afd235E
+000038ea g     F .text	0000000e _ZN11embassy_nrf6gpiote4regs17hed8d2a49325f5b4fE
+000062f6 g     F .text	00000030 _ZN4core5array98_$LT$impl$u20$core..iter..traits..collect..IntoIterator$u20$for$u20$$RF$$u5b$T$u3b$$u20$N$u5d$$GT$9into_iter17h3124a1a8f2a235caE
+0000552e g     F .text	00000058 _ZN91_$LT$core..slice..iter..Iter$LT$T$GT$$u20$as$u20$core..iter..traits..iterator..Iterator$GT$4next17h17c875aafe08635bE
+00004a90 g     F .text	00000026 _ZN4core3ptr14write_volatile17h81ddc699e7059b82E
+00004a6a g     F .text	00000026 _ZN4core3ptr14write_volatile17h6955a4c7eac4c302E
+000062d6 g     F .text	00000012 _ZN20embassy_hal_internal9interrupt12InterruptExt6unpend17h23de27ba4d6271c3E
+00006282 g     F .text	00000030 _ZN20embassy_hal_internal9interrupt12InterruptExt12set_priority17h1d99e41214a8ae7aE
+000062b2 g     F .text	00000024 _ZN20embassy_hal_internal9interrupt12InterruptExt6enable17h3f30f9bbb4a7389fE
+00004a1e g     F .text	00000026 _ZN4core3ptr14write_volatile17h3e20ee04c6afb4ffE
+00009faa g     F .text	00000024 _ZN4core3ptr13read_volatile17h8c86911cfc86bd1dE
+0000a0b2 g     F .text	00000026 _ZN4core3ptr14write_volatile17hd1ab43ad884b9eb6E
+00006326 g     F .text	00000012 _ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$4iter17h0faac5c71319660dE
+0000541c g     F .text	0000001c _ZN4core4iter6traits8iterator8Iterator9enumerate17hcffa451ee7b61e2aE
+00006338 g     F .text	00000016 _ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17ha172f06b816b1a2fE
+00006222 g     F .text	00000060 _ZN110_$LT$core..iter..adapters..enumerate..Enumerate$LT$I$GT$$u20$as$u20$core..iter..traits..iterator..Iterator$GT$4next17h2ad050da4e1a0e9aE
+00004886 g     F .text	00000024 _ZN4core3ptr13read_volatile17h7db4f2efd8efd2bcE
+00003df6 g     F .text	00000062 _ZN87_$LT$embassy_nrf..gpiote..BitIter$u20$as$u20$core..iter..traits..iterator..Iterator$GT$4next17hd78d2ea2b33259f0E
+000073f8 g     F .text	00000010 _ZN12embassy_sync9waitqueue12atomic_waker11AtomicWaker4wake17h8492fb69456d8b05E
+20000054 g     O .bss	00000040 _ZN11embassy_nrf6gpiote14CHANNEL_WAKERS17h37000a83776024dbE
+000073e6 g     F .text	00000012 _ZN12embassy_sync9waitqueue12atomic_waker11AtomicWaker8register17hf17cf2d6985e8e98E
+00004862 g     F .text	00000024 _ZN4core3ptr13read_volatile17h22ace042caa896b9E
+00004adc g     F .text	00000026 _ZN4core3ptr14write_volatile17hc505c8aa9701cd5eE
+00004b28 g     F .text	00000026 _ZN4core3ptr14write_volatile17hef49abf32a5f7765E
+00004b02 g     F .text	00000026 _ZN4core3ptr14write_volatile17hd6fc9d6e45be02bdE
+0000b25a g     F .text	000000ae _ZN4core3fmt3num53_$LT$impl$u20$core..fmt..UpperHex$u20$for$u20$u32$GT$3fmt17h09edfbe88a923cefE
+00004784 g     F .text	00000026 _ZN16critical_section4with17h0933792ccedbd9a3E
+000047aa g     F .text	0000002a _ZN16critical_section4with17h7c7592a294f98abeE
+000047d4 g     F .text	00000020 _ZN16critical_section4with17h8a0a072561cb3807E
+000047f4 g     F .text	0000002a _ZN16critical_section4with17hfd5936fb618fcb9aE
+0000481e g     F .text	00000044 _ZN4core3cmp3Ord3max17h3ace5c9a00b1badbE
+000048aa g     F .text	00000024 _ZN4core3ptr13read_volatile17hb1774360b4e696f1E
+000049ac g     F .text	00000026 _ZN4core3ptr14write_volatile17h0953c3a8be95fceaE
+000049d2 g     F .text	00000026 _ZN4core3ptr14write_volatile17h33b55eb821a50f48E
+0000a2d2 g     F .text	00000006 __dsb
+0000a2d8 g     F .text	00000004 __nop
+00007418 g     F .text	0000001c _ZN4core3ptr72drop_in_place$LT$core..option..Option$LT$core..task..wake..Waker$GT$$GT$17h03f93c5e6a4faed6E
+0000533e g     F .text	00000010 _ZN4core3ptr45drop_in_place$LT$core..cell..BorrowRefMut$GT$17h481c10f62b0989c6E
+0000536c g     F .text	00000012 _ZN4core3ptr96drop_in_place$LT$core..cell..RefMut$LT$embassy_time_queue_utils..queue_integrated..Queue$GT$$GT$17hafb4628f37dd8751E
+0000537e g     F .text	0000002a _ZN4core4cell16RefCell$LT$T$GT$10borrow_mut17h3473d87c90e6635aE
+000053a8 g     F .text	00000058 _ZN4core4cell16RefCell$LT$T$GT$14try_borrow_mut17hc9b41c3ac974cec3E
+0000a300 g     F .text	00000034 _ZN4core4cell22panic_already_borrowed17h6cb71ddacd41e154E
+00008b64 g     F .text	000000cc _ZN4core4sync6atomic12atomic_store17hfc0a016d91044543E
+00006bb4 g     F .text	000000c2 _ZN4core4sync6atomic11atomic_load17hfcdf5dd0aa4de20eE
+00006c78 g     F .text	000000c8 _ZN4core4sync6atomic12atomic_store17hbbdfeee93a6fa1f8E
+000054cc g     F .text	0000002e _ZN4core5slice4iter13Iter$LT$T$GT$3new17h111c877bf7db799bE
+000054fa g     F .text	00000012 _ZN50_$LT$T$u20$as$u20$core..convert..Into$LT$U$GT$$GT$4into17h6e16e7255b95e556E
+00006de8 g     F .text	0000000e _ZN20embassy_hal_internal9interrupt101_$LT$impl$u20$core..convert..From$LT$embassy_hal_internal..interrupt..Priority$GT$$u20$for$u20$u8$GT$4from17h764c4e185f8e43deE
+00005520 g     F .text	0000000e _ZN74_$LT$core..cell..RefMut$LT$T$GT$$u20$as$u20$core..ops..deref..DerefMut$GT$9deref_mut17hf97b6e5f302903b9E
+00006e5e g     F .text	00000012 _ZN4core4cell13Cell$LT$T$GT$3get17he2081a591ba2b4c2E
+00006e70 g     F .text	00000014 _ZN4core4cell13Cell$LT$T$GT$3set17h83929fdb7f08304eE
+00005df4 g     F .text	0000005a _ZN83_$LT$embassy_nrf..time_driver..RtcDriver$u20$as$u20$embassy_time_driver..Driver$GT$3now17h89f5b0d02b75e73bE
+00006fa6 g     F .text	00000024 _ZN24embassy_time_queue_utils16queue_integrated5Queue15next_expiration17haef54b140ae69a08E
+00005e4e g     F .text	00000022 _ZN83_$LT$embassy_nrf..time_driver..RtcDriver$u20$as$u20$embassy_time_driver..Driver$GT$13schedule_wake17hf21d66c8d13a0d31E
+00006ee8 g     F .text	000000be _ZN24embassy_time_queue_utils16queue_integrated5Queue13schedule_wake17h53e1371b1253394dE
+0000ab9e g     F .text	00000008 _ZN4core5slice5index26slice_start_index_len_fail17hf0e445734c2ea2eeE
+000063a2 g     F .text	0000006c _ZN8cortex_m10peripheral4nvic44_$LT$impl$u20$cortex_m..peripheral..NVIC$GT$12set_priority17ha5dcfc803c307399E
+0000640e g     F .text	00000082 _ZN8cortex_m10peripheral4nvic44_$LT$impl$u20$cortex_m..peripheral..NVIC$GT$6unmask17hb89a7b93dac5583dE
+00006490 g     F .text	00000082 _ZN8cortex_m10peripheral4nvic44_$LT$impl$u20$cortex_m..peripheral..NVIC$GT$6unpend17hd138ceb883a00d66E
+0000a57e g     F .text	0000016e _ZN4core3fmt5write17h70d6640cc98da3feE
+0000b0a2 g     F .text	00000088 _ZN4core4char7methods15encode_utf8_raw8do_panic7runtime17h125f10c28f518e62E
+0000ab8e g     F .text	00000010 _ZN57_$LT$core..fmt..Formatter$u20$as$u20$core..fmt..Write$GT$9write_str17hfcf9d41258bfd673E
+0000638a g     F .text	00000018 _ZN8cortex_m10peripheral3scb43_$LT$impl$u20$cortex_m..peripheral..SCB$GT$9sys_reset28_$u7b$$u7b$closure$u7d$$u7d$17h20f668255436af6dE
+0000a088 g     F .text	0000002a _ZN4core3ptr14write_volatile17h049177a1e39cbfb2E
+00009dbe g     F .text	00000024 _ZN5defmt6export8integers5usize17hf8375f8f419f193eE
+0000b308 g     F .text	00000012 _ZN4core3fmt3num3imp52_$LT$impl$u20$core..fmt..Display$u20$for$u20$u32$GT$3fmt17hd60e1a95f99da54dE
+00006512 g     F .text	00000000 CLOCK_POWER
+00006512 g     F .text	00000000 RADIO
+00006512 g     F .text	00000000 UARTE0
+00006512 g     F .text	00000000 TWISPI0
+00006512 g     F .text	00000000 TWISPI1
+00006512 g     F .text	00000000 NFCT
+00006512 g     F .text	00000000 SAADC
+00006512 g     F .text	00000000 TIMER0
+00006512 g     F .text	00000000 TIMER1
+00006512 g     F .text	00000000 TIMER2
+00006512 g     F .text	00000000 RTC0
+00006512 g     F .text	00000000 TEMP
+00006512 g     F .text	00000000 RNG
+00006512 g     F .text	00000000 ECB
+00006512 g     F .text	00000000 AAR_CCM
+00006512 g     F .text	00000000 WDT
+00006512 g     F .text	00000000 QDEC
+00006512 g     F .text	00000000 COMP_LPCOMP
+00006512 g     F .text	00000000 EGU0_SWI0
+00006512 g     F .text	00000000 EGU1_SWI1
+00006512 g     F .text	00000000 EGU2_SWI2
+00006512 g     F .text	00000000 EGU3_SWI3
+00006512 g     F .text	00000000 EGU4_SWI4
+00006512 g     F .text	00000000 EGU5_SWI5
+00006512 g     F .text	00000000 TIMER3
+00006512 g     F .text	00000000 TIMER4
+00006512 g     F .text	00000000 PWM0
+00006512 g     F .text	00000000 PDM
+00006512 g     F .text	00000000 MWU
+00006512 g     F .text	00000000 PWM1
+00006512 g     F .text	00000000 PWM2
+00006512 g     F .text	00000000 SPI2
+00006512 g     F .text	00000000 RTC2
+00006512 g     F .text	00000000 I2S
+00006512 g     F .text	00000000 FPU
+00006512 g     F .text	00000000 USBD
+00006512 g     F .text	00000000 UARTE1
+00006512 g     F .text	00000000 PWM3
+00006512 g     F .text	00000000 SPIM3
+0000651a g     F .text	00000000 __pre_init
+00006512 g     F .text	00000000 NonMaskableInt
+0000ba74 g     F .text	00000000 HardFault
+00006512 g     F .text	00000000 MemoryManagement
+00006512 g     F .text	00000000 BusFault
+00006512 g     F .text	00000000 UsageFault
+00006512 g     F .text	00000000 SVCall
+00006512 g     F .text	00000000 DebugMonitor
+00006512 g     F .text	00000000 PendSV
+00006512 g     F .text	00000000 SysTick
+20000050 g       .bss	00000000 __sbss
+20008220 g       .bss	00000000 __ebss
+20000000 g       .data	00000000 __sdata
+20000050 g       .data	00000000 __edata
+0000edd0 g       *ABS*	00000000 __sidata
+000066e0 g     F .text	00000048 _ZN4core6option15Option$LT$T$GT$3map17h37a50c284656d463E
+00006728 g     F .text	00000048 _ZN4core6option15Option$LT$T$GT$3map17he6d6669ab592c23bE
+0000a334 g     F .text	00000038 _ZN4core6option13expect_failed17hf682f50f2caa2db5E
+00006770 g     F .text	00000044 _ZN4core6option15Option$LT$T$GT$6expect17hc5bc85008021a2f0E
+000067b4 g     F .text	0000000e _ZN57_$LT$$RF$mut$u20$T$u20$as$u20$core..ops..deref..Deref$GT$5deref17hfcf3727fe899df5bE
+000067c2 g     F .text	0000000e _ZN60_$LT$$RF$mut$u20$T$u20$as$u20$core..ops..deref..DerefMut$GT$9deref_mut17hbfaf8595f4bd66f4E
+000067d0 g     F .text	00000014 _ZN69_$LT$core..pin..Pin$LT$Ptr$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17ha0fd592b724e82a1E
+000067e4 g     F .text	00000014 _ZN72_$LT$core..pin..Pin$LT$Ptr$GT$$u20$as$u20$core..ops..deref..DerefMut$GT$9deref_mut17h273f8e7a3e2b34adE
+000070c4 g     F .text	0000000a _ZN19embassy_time_driver3now17he20ffa15b03699c6E
+000069aa g     F .text	00000012 _ZN12embassy_time7instant7Instant8as_ticks17h9cb9870d7a484a0eE
+000069bc g     F .text	0000004e _ZN12embassy_time7instant7Instant9as_micros17h4d235fdcfb24be8fE
+00006a0a g     F .text	00000048 _ZN12embassy_time7instant7Instant11checked_add17h755b25d32fc75464E
+000070ce g     F .text	00000014 _ZN19embassy_time_driver13schedule_wake17h36b905f2968eb3d8E
+00009f30 g     F .text	00000024 _ZN5defmt6export8integers3u6417hebbc2548cfde2953E
+00006d40 g     F .text	0000002c _ZN4core5slice4iter16IterMut$LT$T$GT$3new17ha9f7bd51295dcb61E
+0000b308 g     F .text	00000012 _ZN4core3fmt3num3imp54_$LT$impl$u20$core..fmt..Display$u20$for$u20$usize$GT$3fmt17hd47d5ccf754329d4E
+0000b25a g     F .text	000000ae _ZN4core3fmt3num55_$LT$impl$u20$core..fmt..UpperHex$u20$for$u20$usize$GT$3fmt17ha4d3cfdc6c49c0a2E
+00006df6 g     F .text	00000044 _ZN4core3cmp3Ord3min17h658d976bee5822d2E
+00006e3a g     F .text	00000016 _ZN4core3cmp3min17hcb13f8d3124a6ce4E
+00006e50 g     F .text	0000000e _ZN4core4cell13Cell$LT$T$GT$3get17h99156f9b85005c36E
+00006e84 g     F .text	00000010 _ZN4core4cell13Cell$LT$T$GT$3set17hb9632cb4ac8c3c0aE
+00006e94 g     F .text	00000014 _ZN4core4cell13Cell$LT$T$GT$7replace17h57dd27963a8f3cf8E
+00006ea8 g     F .text	00000014 _ZN4core6option15Option$LT$T$GT$7is_none17h9bec77f17823cacbE
+00006ece g     F .text	0000001a _ZN78_$LT$core..ptr..non_null..NonNull$LT$T$GT$$u20$as$u20$core..cmp..PartialEq$GT$2eq17h4c5358c8e9c7f4b4E
+0000969c g     F .text	00000044 _ZN16embassy_executor3raw5waker15task_from_waker17h12439a98522045fbE
+0000970c g     F .text	00000012 _ZN16embassy_executor3raw7TaskRef16timer_queue_item17hf5744ba05b232187E
+000096f0 g     F .text	0000000a _ZN16embassy_executor3raw7TaskRef8dangling17he46ac951e1b89cdcE
+0000988e g     F .text	00000064 _ZN16embassy_executor3raw9wake_task17haa563adf7cbcfabeE
+000070e2 g     F .text	00000030 _ZN16critical_section4with17h1e29f6925bb3b9ffE
+00007244 g     F .text	00000012 _ZN122_$LT$embassy_sync..blocking_mutex..raw..CriticalSectionRawMutex$u20$as$u20$embassy_sync..blocking_mutex..raw..RawMutex$GT$4lock28_$u7b$$u7b$closure$u7d$$u7d$17h4ed677b477235b0fE
+00007112 g     F .text	0000002a _ZN16critical_section4with17ha5883856b0e0641dE
+00007256 g     F .text	00000010 _ZN122_$LT$embassy_sync..blocking_mutex..raw..CriticalSectionRawMutex$u20$as$u20$embassy_sync..blocking_mutex..raw..RawMutex$GT$4lock28_$u7b$$u7b$closure$u7d$$u7d$17hc20a15227b6c5ddfE
+00007154 g     F .text	00000026 _ZN4core4cell13Cell$LT$T$GT$3set17h1cd9153f83590f50E
+0000717a g     F .text	00000020 _ZN4core4cell13Cell$LT$T$GT$7replace17h7b32bbd167272b0eE
+0000720c g     F .text	00000018 _ZN122_$LT$embassy_sync..blocking_mutex..raw..CriticalSectionRawMutex$u20$as$u20$embassy_sync..blocking_mutex..raw..RawMutex$GT$4lock17h3a878c52ebdabebaE
+00007224 g     F .text	00000020 _ZN122_$LT$embassy_sync..blocking_mutex..raw..CriticalSectionRawMutex$u20$as$u20$embassy_sync..blocking_mutex..raw..RawMutex$GT$4lock17h6b3f7c03682e5379E
+000072aa g     F .text	0000001c _ZN12embassy_sync14blocking_mutex18Mutex$LT$R$C$T$GT$4lock28_$u7b$$u7b$closure$u7d$$u7d$17h8384f6064654c7a6E
+00007292 g     F .text	00000018 _ZN12embassy_sync14blocking_mutex18Mutex$LT$R$C$T$GT$4lock28_$u7b$$u7b$closure$u7d$$u7d$17h23acb6a8048aba8dE
+00007266 g     F .text	00000014 _ZN12embassy_sync14blocking_mutex18Mutex$LT$R$C$T$GT$4lock17h13a679505edacf6fE
+0000727a g     F .text	00000018 _ZN12embassy_sync14blocking_mutex18Mutex$LT$R$C$T$GT$4lock17hf603db56d9413de3E
+00007372 g     F .text	00000074 _ZN12embassy_sync9waitqueue12atomic_waker27GenericAtomicWaker$LT$M$GT$4wake28_$u7b$$u7b$closure$u7d$$u7d$17h4737b0cd4bcc2e71E
+000072d8 g     F .text	0000008a _ZN12embassy_sync9waitqueue12atomic_waker27GenericAtomicWaker$LT$M$GT$8register28_$u7b$$u7b$closure$u7d$$u7d$17hfda182e1eb5facafE
+000072c6 g     F .text	00000012 _ZN12embassy_sync9waitqueue12atomic_waker27GenericAtomicWaker$LT$M$GT$8register17h66352035f07247f3E
+00007408 g     F .text	00000010 _ZN4core3ptr44drop_in_place$LT$core..task..wake..Waker$GT$17h8f3d27706aadafabE
+00007362 g     F .text	00000010 _ZN12embassy_sync9waitqueue12atomic_waker27GenericAtomicWaker$LT$M$GT$4wake17hf7f2d28be1b53c91E
+0000a4bc g     F .text	0000003a _ZN4core9panicking14panic_explicit17hd41be345c3087614E
+0000a9b4 g     F .text	000001da _ZN4core3fmt9Formatter3pad17h2934ce84474981e1E
+00007448 g     F .text	00000014 _ZN44_$LT$$RF$T$u20$as$u20$core..fmt..Display$GT$3fmt17h0282a50597d86e14E
+00007494 g     F .text	000000ca _ZN4core4sync6atomic11atomic_load17hf89c49ab5f5100ecE
+0000a36c g     F .text	000000c0 _ZN73_$LT$core..panic..panic_info..PanicInfo$u20$as$u20$core..fmt..Display$GT$3fmt17h31e6d42fa2f9de00E
+0000762c g     F .text	00000022 _ZN5defmt6export3fmt17hd14b83efed30caacE
+0000764e g     F .text	00000012 _ZN88_$LT$defmt..impls..adapter..Display2Format$LT$T$GT$$u20$as$u20$defmt..traits..Format$GT$11_format_tag17h218fc70a0a51152dE
+00007660 g     F .text	00000018 _ZN88_$LT$defmt..impls..adapter..Display2Format$LT$T$GT$$u20$as$u20$defmt..traits..Format$GT$12_format_data17h774920d86c0cf38eE
+00009e50 g     F .text	00000050 _ZN5defmt6export7display17h66a6ad0d9a4f8d3fE
+0000a2e2 g     F .text	00000004 __udf
+0000a2ca g     F .text	00000004 __cpsid
+000076d6 g     F .text	0000002c _ZN11panic_probe10hard_fault17hfcaa2040a9819e11E
+0000776a g     F .text	00000046 _ZN110_$LT$core..ops..range..RangeFrom$LT$usize$GT$$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$5index17hcc19f1685f67a3cdE
+000079ae g     F .text	00000030 _ZN4core3cmp3Ord3min17h128d512d1cb2c35dE
+000079de g     F .text	00000030 _ZN4core3fmt9Arguments9new_const17h679986b37acb50eeE
+00007b38 g     F .text	000000ca _ZN4core4sync6atomic11atomic_load17h3e9e0abd6db66db1E
+00007c04 g     F .text	000000cc _ZN4core4sync6atomic12atomic_store17h1b3e4610626ed9f5E
+00007a74 g     F .text	000000c2 _ZN4core4sync6atomic11atomic_load17h059e4908f778e4c2E
+00007cd0 g     F .text	000000c8 _ZN4core4sync6atomic12atomic_store17h34073bf10e32a997E
+00007d98 g     F .text	00000014 _ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$8is_empty17h436190a4a789108dE
+00007dac g     F .text	0000002c _ZN4core5slice4iter87_$LT$impl$u20$core..iter..traits..collect..IntoIterator$u20$for$u20$$RF$$u5b$T$u5d$$GT$9into_iter17he5264ccf79942584E
+00007e58 g     F .text	00000028 _ZN5defmt8encoding5inner7Encoder11start_frame17ha1db11d99e8afb28E
+00007e80 g     F .text	0000001e _ZN5defmt8encoding5inner7Encoder11start_frame28_$u7b$$u7b$closure$u7d$$u7d$17h1b6dbe0b6cc9a828E
+00007e9e g     F .text	00000164 _ZN5defmt8encoding5inner7Encoder5write17h0000277850e5507bE
+00008112 g     F .text	00000058 _ZN91_$LT$core..slice..iter..Iter$LT$T$GT$$u20$as$u20$core..iter..traits..iterator..Iterator$GT$4next17hd3831f7670c52ffeE
+00008002 g     F .text	0000001e _ZN5defmt8encoding5inner7Encoder5write28_$u7b$$u7b$closure$u7d$$u7d$17h0db566b02e2df09aE
+00008020 g     F .text	000000a0 _ZN5defmt8encoding5inner7Encoder9end_frame17h80a8a74f004f5d36E
+000080c0 g     F .text	0000001e _ZN5defmt8encoding5inner7Encoder9end_frame28_$u7b$$u7b$closure$u7d$$u7d$17hb5708badff841264E
+000080de g     F .text	00000010 _ZN5defmt8encoding7Encoder11start_frame17ha99e41e021885319E
+000080ee g     F .text	00000014 _ZN5defmt8encoding7Encoder5write17h7862f6bf3061c978E
+00008102 g     F .text	00000010 _ZN5defmt8encoding7Encoder9end_frame17h1beb2f0016646dfeE
+00008642 g     F .text	00000012 _ZN59_$LT$defmt_rtt..Logger$u20$as$u20$defmt..traits..Logger$GT$7acquire17hcc1772739a3d574fE
+00008654 g     F .text	0000001e _ZN59_$LT$defmt_rtt..Logger$u20$as$u20$defmt..traits..Logger$GT$5write17h9ccfbf226fc2cdc3E
+00008672 g     F .text	00000012 _ZN59_$LT$defmt_rtt..Logger$u20$as$u20$defmt..traits..Logger$GT$7release17h9f169f360ba18710E
+20000018 g     O .data	00000006 _ZN9defmt_rtt4NAME17ha0cecba21a35b499E
+20008220 g     O .uninit	00000400 _ZN9defmt_rtt6BUFFER17h83421731965edde1E
+000086aa g     F .text	00000020 _ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6as_ref17hf2abadbcae1fe544E
+000086ca g     F .text	00000012 _ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$7is_null17hc0db22b49f52938dE
+000086dc g     F .text	0000001a _ZN4core3ptr8non_null16NonNull$LT$T$GT$13new_unchecked17haa5f16f4f157b762E
+00008714 g     F .text	0000002a _ZN4core3ptr8non_null16NonNull$LT$T$GT$3new17haaad3012ebab8153E
+0000873e g     F .text	00000008 _ZN4core3ptr8non_null16NonNull$LT$T$GT$8dangling17h57c68de6288a128dE
+00008914 g     F .text	000000c2 _ZN4core4sync6atomic11atomic_load17h51b38bfcafba8eddE
+000089d8 g     F .text	000000c2 _ZN4core4sync6atomic11atomic_load17h9edac1a57922a642E
+00008a9c g     F .text	000000c8 _ZN4core4sync6atomic12atomic_store17h05dbdb98fb061a89E
+00008c96 g     F .text	00000098 _ZN4core4sync6atomic18AtomicPtr$LT$T$GT$12fetch_update17h2e8e6083c56eaf3aE
+00008ee0 g     F .text	00000458 _ZN4core4sync6atomic28atomic_compare_exchange_weak17hbf15dc9a6502811cE
+00008d2e g     F .text	00000010 _ZN4core4sync6atomic18AtomicPtr$LT$T$GT$3new17h14c1a04561cdfa5fE
+00008d3e g     F .text	00000016 _ZN4core4sync6atomic18AtomicPtr$LT$T$GT$4load17h0c708234ebce0a48E
+00008d54 g     F .text	00000172 _ZN4core4sync6atomic18AtomicPtr$LT$T$GT$4swap17h17984b7b855b2f87E
+00008ec6 g     F .text	00000018 _ZN4core4sync6atomic18AtomicPtr$LT$T$GT$5store17hadc1ddd897cd6c18E
+00009376 g     F .text	0000001e _ZN4core6option15Option$LT$T$GT$16unwrap_unchecked17h1f9e56b18fa314dbE
+00009394 g     F .text	0000001e _ZN4core6option15Option$LT$T$GT$16unwrap_unchecked17h4693fae279ff0dcbE
+000093b2 g     F .text	00000026 _ZN4core6option15Option$LT$T$GT$3map17h202d6545da9b63e5E
+000093d8 g     F .text	00000026 _ZN4core6option15Option$LT$T$GT$3map17hcd104ae9fc16c77aE
+000093fe g     F .text	00000036 _ZN4core6result19Result$LT$T$C$E$GT$2ok17h9b73cde2f1bbd24fE
+00009434 g     F .text	00000040 _ZN8cortex_m10peripheral4nvic44_$LT$impl$u20$cortex_m..peripheral..NVIC$GT$7request17h8cddf0fced7bd9cbE
+000094a0 g     F .text	0000000e _ZN94_$LT$embassy_executor..arch..__pender..Irq$u20$as$u20$cortex_m..interrupt..InterruptNumber$GT$6number17hfd3f62d549fe34b3E
+0000983e g     F .text	0000001e _ZN16embassy_executor3raw8Executor3new17h81cd4d5b68eae0dbE
+000096fa g     F .text	00000012 _ZN16embassy_executor3raw7TaskRef6header17hd12d56945c9aeeb8E
+00009612 g     F .text	00000012 _ZN16embassy_executor3raw4util23SyncUnsafeCell$LT$T$GT$3set17h3df240f58b26ea0bE
+0000976e g     F .text	00000032 _ZN16embassy_executor3raw12SyncExecutor5spawn17h5709113c7670fb89E
+00009974 g     F .text	0000000c _ZN16embassy_executor7spawner7Spawner3new17h3de6049afb2a18d6E
+0000999e g     F .text	00000018 _ZN44_$LT$$RF$T$u20$as$u20$core..fmt..Display$GT$3fmt17h36c959551a7cc780E
+000099b6 g     F .text	00000026 _ZN4core3fmt2rt8Argument11new_display17h3fe7ab214a2e6d9bE
+000099dc g     F .text	00000038 _ZN4core3fmt5Write10write_char17hb4d231858ec0b709E
+00009ee4 g     F .text	00000032 _ZN60_$LT$defmt..export..FmtWrite$u20$as$u20$core..fmt..Write$GT$9write_str17h0af068b63453b811E
+00009a14 g     F .text	00000010 _ZN4core3fmt5Write9write_fmt17hd242372d8b039474E
+00009cf6 g     F .text	000000c8 _ZN75_$LT$$RF$mut$u20$W$u20$as$u20$core..fmt..Write..write_fmt..SpecWriteFmt$GT$14spec_write_fmt17h8c4bf4379b34f0d1E
+00009a24 g     F .text	00000032 _ZN4core3fmt9Arguments6new_v117h831b19bba454c7e5E
+00009cc2 g     F .text	00000034 _ZN4core6result19Result$LT$T$C$E$GT$2ok17hcfbcb115a356bdadE
+00009df0 g     F .text	00000006 _ZN5defmt6export14make_formatter17hec2c8cf7937169c8E
+00000003 g       .defmt	00000000 __DEFMT_MARKER_TRACE_START
+00000003 g       .defmt	00000000 __DEFMT_MARKER_TRACE_END
+00000003 g       .defmt	00000000 __DEFMT_MARKER_DEBUG_START
+00000003 g       .defmt	00000000 __DEFMT_MARKER_DEBUG_END
+00000003 g       .defmt	00000000 __DEFMT_MARKER_INFO_START
+00000005 g       .defmt	00000000 __DEFMT_MARKER_INFO_END
+00000005 g       .defmt	00000000 __DEFMT_MARKER_WARN_START
+00000006 g       .defmt	00000000 __DEFMT_MARKER_WARN_END
+00000006 g       .defmt	00000000 __DEFMT_MARKER_ERROR_START
+0000000b g       .defmt	00000000 __DEFMT_MARKER_ERROR_END
+0000a1b2 g     F .text	0000004a _ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17h98a1a367499b061eE
+0000a1fc g     F .text	0000001e _ZN126_$LT$cortex_m..critical_section..single_core_critical_section..SingleCoreCriticalSection$u20$as$u20$critical_section..Impl$GT$7acquire17h6e211c7e29f7690fE
+0000a21a g     F .text	00000018 _ZN126_$LT$cortex_m..critical_section..single_core_critical_section..SingleCoreCriticalSection$u20$as$u20$critical_section..Impl$GT$7release17hca962cb97a73e5c6E
+0000a2ce g     F .text	00000004 __cpsie
+0000a2dc g     F .text	00000006 __primask_r
+0000a6ec g     F .text	00000280 _ZN4core3fmt9Formatter12pad_integral17h12ff88d7f2a4971aE
+0000aba6 g     F .text	000004d8 _ZN4core3str5count14do_count_chars17h457216055dd3161cE
+0000a2e6 g     F .text	0000001a _ZN63_$LT$core..cell..BorrowMutError$u20$as$u20$core..fmt..Debug$GT$3fmt17h38e9279fc590690dE
+0000a442 g     F .text	00000028 _ZN4core9panicking18panic_nounwind_fmt17hc8d70d9c1bb0d40fE
+0000b42a g     F .text	0000003e _ZN4core5slice5index26slice_start_index_len_fail8do_panic7runtime17hbc22bef2b91ccf62E
+0000b25a g     F .text	000000ae _ZN4core3fmt3num53_$LT$impl$u20$core..fmt..UpperHex$u20$for$u20$i32$GT$3fmt17hfc0efaf636449e8dE
+0000b25a g     F .text	000000ae _ZN4core3fmt3num55_$LT$impl$u20$core..fmt..UpperHex$u20$for$u20$isize$GT$3fmt17hc424b895c4238364E
+20020000 g       *ABS*	00000000 _stack_start
+00000100 g       .vector_table	00000000 _stext
+20008620 g       .uninit	00000000 __sheap
+20008620 g       .uninit	00000000 _stack_end
+00000008 g       .vector_table	00000000 __exceptions
+00000040 g       .vector_table	00000000 __eexceptions
+00000014 g       .defmt	00000000 __DEFMT_MARKER_END
+20008620 g       .uninit	00000000 __euninit
+20020000 g       *ABS*	00000000 _ram_end
+00000000 g       .vector_table	00000000 __vector_table
+00000100 g       .text	00000000 __stext
+0000ba7c g       .text	00000000 __etext
+0000ba80 g       .rodata	00000000 __srodata
+0000edd0 g       .rodata	00000000 __erodata
+0000ee20 g       .gnu.sgstubs	00000000 __veneer_base
+0000ee20 g       .gnu.sgstubs	00000000 __veneer_limit
+20008220 g       .uninit	00000000 __suninit
+
+
