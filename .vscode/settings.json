@@ -1,0 +1,28 @@
+{
+  "rust-analyzer.cargo.allTargets": false,
+  "[rust]": {
+    "editor.formatOnSave": true
+  },
+  "rust-analyzer.linkedProjects": [
+    "examples/display/Cargo.toml"
+  ],
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "probe-rs-debug",
+        "request": "launch",
+        "name": "microbit Debug",
+        "flashingConfig": {
+          "flashingEnabled": true
+        },
+        "chip": "nRF52833_xxAA",
+        "coreConfigs": [
+          {
+            "programBinary": "${workspaceFolder}/examples/display/target/thumbv7em-none-eabihf/debug/microbit-async-display-example"
+          }
+        ]
+      }
+    ]
+  }
+}
